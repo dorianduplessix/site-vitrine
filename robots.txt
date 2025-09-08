@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://duplessixmultiservices.netlify.app/sitemap.xml
