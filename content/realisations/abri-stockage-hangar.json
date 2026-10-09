@@ -1,0 +1,61 @@
+{
+  "title": "Construction d’un abri de stockage clos sous hangar",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["exterieurs"],
+  "summary": "Création d’un espace de stockage fermé sous un hangar existant, avec ossature bois, habillage OSB et plancher partiel destiné à recevoir des étagères.",
+  "cover": "/assets/photos/atelier-osb-interieur.webp",
+  "cover_alt": "Intérieur de l’abri de stockage fermé avec murs en OSB et plancher partiel",
+  "sections": [
+    {
+      "title": "Créer un espace fermé sous le hangar",
+      "paragraphs": [
+        "Le projet consistait à aménager un local de stockage clos dans une partie du hangar existant.",
+        "L’ossature bois a permis de délimiter le volume avant la fermeture des parois avec des panneaux OSB."
+      ]
+    },
+    {
+      "title": "Un aménagement adapté au stockage",
+      "paragraphs": [
+        "De grandes portes en bois donnent accès au local et facilitent le passage du matériel.",
+        "Un plancher partiel a été réalisé pour créer une base destinée à recevoir des étagères de stockage."
+      ]
+    }
+  ],
+  "steps": [
+    "Préparation et implantation du local sous le hangar",
+    "Montage de l’ossature bois",
+    "Pose des portes en bois",
+    "Habillage des parois avec des panneaux OSB",
+    "Réalisation du plancher partiel",
+    "Ajustements et finitions"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/grange-etat-initial.webp",
+      "alt": "Emplacement sous le hangar avant la construction de l’abri de stockage",
+      "caption": "Emplacement initial sous le hangar."
+    },
+    {
+      "image": "/assets/photos/ossature-bois-grange.webp",
+      "alt": "Premiers murs de l’ossature bois montés sous le hangar",
+      "caption": "Montage des premiers murs de l’ossature bois."
+    },
+    {
+      "image": "/assets/photos/charpente-ossature-interieure.webp",
+      "alt": "Structure intérieure de l’abri de stockage en cours de montage",
+      "caption": "Mise en place de la structure intérieure."
+    },
+    {
+      "image": "/assets/photos/ossature-bois-panneaux-osb.webp",
+      "alt": "Ossature bois partiellement fermée par des panneaux OSB",
+      "caption": "Pose progressive des panneaux OSB sur l’ossature."
+    },
+    {
+      "image": "/assets/photos/portes-bois-posees.webp",
+      "alt": "Grandes portes en bois posées sur l’abri de stockage",
+      "caption": "Pose des grandes portes en bois."
+    }
+  ]
+}
