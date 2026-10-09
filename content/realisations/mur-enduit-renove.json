@@ -1,0 +1,33 @@
+{
+  "title": "Reprise complète d’un mur intérieur",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["enduit-peinture-placo"],
+  "summary": "Préparation d’un mur ancien, reprise de l’enduit et finition pour retrouver une surface propre et régulière.",
+  "cover": "/assets/photos/enduit-avant-apres-vertical.webp",
+  "cover_alt": "Mur intérieur avant et après la reprise de l’enduit",
+  "sections": [
+    {
+      "title": "Un support très dégradé",
+      "paragraphs": [
+        "Le mur présentait des décollements et de nombreuses irrégularités qui empêchaient une finition propre.",
+        "La préparation du support a été déterminante avant la reprise générale."
+      ]
+    },
+    {
+      "title": "Une surface remise à niveau",
+      "paragraphs": [
+        "Après les reprises et la mise en peinture, le mur retrouve un aspect propre et uniforme."
+      ]
+    }
+  ],
+  "steps": [
+    "Grattage des parties non adhérentes",
+    "Préparation et nettoyage du support",
+    "Application et dressage de l’enduit",
+    "Ponçage et contrôle du support",
+    "Mise en peinture"
+  ],
+  "gallery": []
+}

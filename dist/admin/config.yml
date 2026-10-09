@@ -1,0 +1,82 @@
+backend:
+  name: github
+  repo: dorianduplessix/site-vitrine
+  branch: main
+  use_graphql: true
+
+site_url: https://renovation-guidel.fr
+display_url: https://renovation-guidel.fr
+logo_url: https://renovation-guidel.fr/favicon.svg
+locale: fr
+publish_mode: simple
+
+media_folder: dist/assets/photos/realisations
+public_folder: /assets/photos/realisations
+media_processing:
+  enabled: true
+  format:
+    enabled: true
+    default: webp
+  quality: 82
+  strip_metadata: true
+  width: 1800
+  height: null
+
+collections:
+  - name: realisations
+    label: Réalisations
+    label_singular: Réalisation
+    folder: content/realisations
+    create: true
+    delete: true
+    extension: json
+    format: json
+    identifier_field: title
+    slug: "{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [title, date]
+    fields:
+      - {label: Titre, name: title, widget: string}
+      - {label: Date de publication, name: date, widget: datetime, time_format: false, format: "YYYY-MM-DD"}
+      - {label: Publiée, name: published, widget: boolean, default: true}
+      - {label: Commune, name: city, widget: string, required: false, hint: "Laisser vide si la commune ne doit pas être affichée."}
+      - label: Services associés
+        name: services
+        widget: select
+        multiple: true
+        min: 1
+        options:
+          - {label: "Rénovation de salle d’eau", value: renovation-salle-deau}
+          - {label: "Enduit, peinture & placo", value: enduit-peinture-placo}
+          - {label: "Dépannage & petits travaux", value: petits-travaux}
+          - {label: "Extérieurs & menuiseries", value: exterieurs}
+          - {label: "Maintenance immobilière", value: maintenance-immobiliere}
+      - {label: Résumé, name: summary, widget: text, hint: "Deux ou trois phrases qui apparaîtront sur la page Réalisations."}
+      - {label: Photo principale, name: cover, widget: image, allow_multiple: false, choose_url: false}
+      - {label: Description de la photo principale, name: cover_alt, widget: string, hint: "Décrire simplement ce qui est visible sur la photo."}
+      - label: Parties du texte
+        name: sections
+        widget: list
+        min: 1
+        summary: "{{fields.title}}"
+        fields:
+          - {label: Intertitre, name: title, widget: string}
+          - label: Paragraphes
+            name: paragraphs
+            widget: list
+            min: 1
+            field: {label: Paragraphe, name: paragraph, widget: text}
+      - label: Travaux réalisés
+        name: steps
+        widget: list
+        required: false
+        field: {label: Étape, name: step, widget: string}
+      - label: Galerie photos
+        name: gallery
+        widget: list
+        required: false
+        summary: "{{fields.caption}}"
+        fields:
+          - {label: Photo, name: image, widget: image, allow_multiple: false, choose_url: false}
+          - {label: Description de la photo, name: alt, widget: string}
+          - {label: Légende visible, name: caption, widget: string, required: false}

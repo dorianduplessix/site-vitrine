@@ -1,0 +1,53 @@
+{
+  "title": "Fabrication de volets extérieurs à l’identique",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["exterieurs"],
+  "summary": "Fabrication complète de volets en bois exotique, reproduits à l’identique des anciens.",
+  "cover": "/assets/photos/volet-avant-apres-horizontal.webp",
+  "cover_alt": "Anciens volets et nouveaux volets fabriqués à l’identique en bois exotique",
+  "sections": [
+    {
+      "title": "Une fabrication à l’identique",
+      "paragraphs": [
+        "Les anciens volets ont servi de modèle pour reproduire leurs dimensions, leur assemblage et leur aspect.",
+        "Les nouveaux volets ont été entièrement fabriqués en bois exotique."
+      ]
+    },
+    {
+      "title": "Avant et après",
+      "paragraphs": [
+        "Le visuel présente les anciens volets et les nouveaux volets fabriqués à l’identique."
+      ]
+    }
+  ],
+  "steps": [
+    "Relevé des dimensions et des caractéristiques des anciens volets",
+    "Fabrication des nouveaux volets en bois exotique",
+    "Reprise et pose des ferrures",
+    "Application de la finition et pose"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/volets-bois-brut.webp",
+      "alt": "Bois exotique préparé pour la fabrication des volets",
+      "caption": "Préparation du bois exotique avant l’assemblage."
+    },
+    {
+      "image": "/assets/photos/volets-assemblage.webp",
+      "alt": "Assemblage des volets en bois exotique en atelier",
+      "caption": "Assemblage des nouveaux volets à l’identique des anciens."
+    },
+    {
+      "image": "/assets/photos/volets-sous-couche-exterieur.webp",
+      "alt": "Application de la sous-couche sur les volets en bois exotique",
+      "caption": "Application de la sous-couche avant la finition."
+    },
+    {
+      "image": "/assets/photos/volets-finis-atelier.webp",
+      "alt": "Volets en bois exotique terminés avant leur pose",
+      "caption": "Volets terminés avant leur pose."
+    }
+  ]
+}

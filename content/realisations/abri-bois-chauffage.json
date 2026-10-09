@@ -1,0 +1,26 @@
+{
+  "title": "Construction d’un abri pour bois de chauffage",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["exterieurs"],
+  "summary": "Réalisation d’un abri en bois pour stocker le bois de chauffage, avec une couverture en bac acier imitation tuiles.",
+  "cover": "/assets/photos/carport.webp",
+  "cover_alt": "Abri en bois pour bois de chauffage avec couverture en bac acier imitation tuiles",
+  "sections": [
+    {
+      "title": "Le projet",
+      "paragraphs": [
+        "Cet abri a été conçu pour stocker et protéger le bois de chauffage.",
+        "La structure est en bois et la couverture en bac acier imitation tuiles."
+      ]
+    }
+  ],
+  "steps": [
+    "Préparation de l’implantation",
+    "Montage de la structure en bois",
+    "Pose de la couverture en bac acier imitation tuiles",
+    "Réalisation des claustras et finitions"
+  ],
+  "gallery": []
+}

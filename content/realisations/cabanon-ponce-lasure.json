@@ -1,0 +1,32 @@
+{
+  "title": "Ponçage et lasure d’un cabanon de jardin",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["exterieurs"],
+  "summary": "Ponçage complet puis application d’une lasure pour protéger et remettre en valeur un cabanon de jardin.",
+  "cover": "/assets/photos/cabanon-avant-apres.webp",
+  "cover_alt": "Cabanon de jardin avant et après ponçage et lasure",
+  "sections": [
+    {
+      "title": "Le besoin",
+      "paragraphs": [
+        "Le bois avait besoin d’une préparation complète avant de recevoir une nouvelle protection.",
+        "Le chantier a porté sur l’ensemble des surfaces extérieures visibles."
+      ]
+    },
+    {
+      "title": "Le résultat",
+      "paragraphs": [
+        "Le ponçage a permis de repartir sur un support propre avant l’application de la lasure."
+      ]
+    }
+  ],
+  "steps": [
+    "Nettoyage et préparation",
+    "Ponçage complet du bois",
+    "Dépoussiérage",
+    "Application de la lasure"
+  ],
+  "gallery": []
+}

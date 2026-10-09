@@ -1,0 +1,32 @@
+{
+  "title": "Rénovation complète d’une salle d’eau",
+  "date": "2026-10-09",
+  "published": true,
+  "city": "",
+  "services": ["renovation-salle-deau"],
+  "summary": "Rénovation d’une salle d’eau avec douche, panneaux muraux, meuble vasque et finitions.",
+  "cover": "/assets/photos/salle-eau.webp",
+  "cover_alt": "Salle d’eau rénovée par Duplessix Multi-Services",
+  "sections": [
+    {
+      "title": "Le projet",
+      "paragraphs": [
+        "Cette rénovation a permis de remettre à niveau l’ensemble de la salle d’eau et d’obtenir un espace plus cohérent au quotidien.",
+        "Les choix ont été adaptés aux dimensions existantes et aux équipements à remplacer."
+      ]
+    },
+    {
+      "title": "Le résultat",
+      "paragraphs": [
+        "La pièce réunit désormais une douche, des panneaux muraux, un meuble vasque et des finitions coordonnées."
+      ]
+    }
+  ],
+  "steps": [
+    "Préparation de la pièce et des supports",
+    "Pose des équipements sanitaires",
+    "Installation des panneaux muraux",
+    "Réalisation des raccords, joints et finitions"
+  ],
+  "gallery": []
+}
