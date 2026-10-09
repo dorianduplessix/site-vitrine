@@ -44,7 +44,7 @@ function head({title,description,canonical,image,type='website'}){
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${absolute}">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/assets/styles.css?v=ga4-consent-1">
+  <link rel="stylesheet" href="/assets/styles.css?v=realisations-ui-2">
   <meta name="theme-color" content="#102a34">
   <meta property="og:type" content="${type}">
   <meta property="og:locale" content="fr_FR">
