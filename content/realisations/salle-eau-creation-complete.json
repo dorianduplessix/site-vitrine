@@ -4,7 +4,7 @@
   "published": true,
   "city": "",
   "services": ["renovation-salle-deau"],
-  "summary": "Création complète d’une salle d’eau, avec mise en place des évacuations d’eaux usées, des alimentations en eau froide et eau chaude sanitaire, puis réalisation des aménagements et des finitions.",
+  "summary": "Création complète d’une salle d’eau, avec mise en place des évacuations d’eaux usées, des alimentations en eau froide et eau chaude sanitaire, puis réalisation des aménagements, de la peinture et des finitions.",
   "cover": "/assets/photos/salle-eau-douche-terminee.webp",
   "cover_alt": "Salle d’eau terminée avec douche, paroi vitrée et WC",
   "sections": [
@@ -19,7 +19,7 @@
     {
       "title": "Des équipements et des finitions coordonnés",
       "paragraphs": [
-        "La salle d’eau réunit une douche avec paroi vitrée, un WC et un meuble vasque avec miroir.",
+        "La salle d’eau réunit une douche avec paroi vitrée, un WC et un meuble vasque avec miroir. Les travaux de peinture complètent l’aménagement de la pièce.",
         "Le carrelage gris, ocre et terre cuite, posé par l’artisan partenaire, structure les différentes zones de la pièce."
       ]
     }
@@ -30,6 +30,7 @@
     "Pose et préparation des plaques de plâtre hydrofuges",
     "Réalisation de l’étanchéité de la zone de douche",
     "Coordination avec l’artisan partenaire chargé de la pose du carrelage mural et du sol",
+    "Préparation des supports et travaux de peinture",
     "Installation du receveur, de la paroi et de la robinetterie de douche",
     "Pose du WC, du meuble vasque et du miroir",
     "Raccords, joints et finitions"
