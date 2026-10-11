@@ -44,7 +44,7 @@ function head({title,description,canonical,image,type='website'}){
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${absolute}">
   <link rel="icon" href="/favicon.svg">
-  <link rel="stylesheet" href="/assets/styles.css?v=realisations-ui-2">
+  <link rel="stylesheet" href="/assets/styles.css?v=realisations-communes-1">
   <meta name="theme-color" content="#102a34">
   <meta property="og:type" content="${type}">
   <meta property="og:locale" content="fr_FR">
@@ -62,7 +62,8 @@ function serviceLinks(entry){
 
 function card(entry,{compact=false}={}){
   const linked=serviceLinks(entry);
-  return `<article class="realisation-card${compact?' compact':''}"><a href="${pageUrl(entry.slug)}"><div class="realisation-card-image"><img src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="lazy" decoding="async"></div><div class="realisation-card-copy"><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h${compact?'3':'2'}>${esc(entry.title)}</h${compact?'3':'2'}><p>${esc(entry.summary)}</p><span class="text-link">Voir le chantier →</span></div></a></article>`;
+  const location=entry.city?`<p class="realisation-place">${esc(entry.city)}</p>`:'';
+  return `<article class="realisation-card${compact?' compact':''}"><a href="${pageUrl(entry.slug)}"><div class="realisation-card-image"><img src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="lazy" decoding="async"></div><div class="realisation-card-copy"><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h${compact?'3':'2'}>${esc(entry.title)}</h${compact?'3':'2'}>${location}<p>${esc(entry.summary)}</p><span class="text-link">Voir le chantier →</span></div></a></article>`;
 }
 
 function renderListing(entries){
@@ -82,7 +83,7 @@ function renderListing(entries){
 
 function renderDetail(entry){
   const linked=serviceLinks(entry);
-  const location=entry.city?`<span>${esc(entry.city)}</span>`:'';
+  const location=entry.city?`<span>Commune : ${esc(entry.city)}</span>`:'';
   const published=entry.date?new Intl.DateTimeFormat('fr-FR',{dateStyle:'long'}).format(new Date(entry.date)):'';
   const date=published?`<span>Publié le ${esc(published)}</span>`:'';
   const sections=(entry.sections||[]).map(section=>`<section class="realisation-section"><h2>${esc(section.title)}</h2>${(section.paragraphs||[]).map(paragraph=>`<p>${esc(paragraph)}</p>`).join('')}</section>`).join('');
@@ -96,6 +97,7 @@ function renderDetail(entry){
     description:entry.summary,
     image:`https://renovation-guidel.fr${normalizePath(entry.cover)}`,
     datePublished:entry.date,
+    ...(entry.city?{contentLocation:{'@type':'Place',name:entry.city}}:{}),
     author:{'@type':'Person',name:'Dorian Duplessix'},
     publisher:{'@type':'Organization',name:'Duplessix Multi-Services'},
     mainEntityOfPage:`https://renovation-guidel.fr${pageUrl(entry.slug)}`
@@ -122,6 +124,7 @@ async function updateServicePages(entries){
   for(const [key,service] of Object.entries(services)){
     const path=join(distDir,'services',service.file);
     let html=await readFile(path,'utf8');
+    html=html.replace('/assets/styles.css?v=realisations-ui-2','/assets/styles.css?v=realisations-communes-1');
     const start='<!-- REALISATIONS_LIEES_DEBUT -->';
     const end='<!-- REALISATIONS_LIEES_FIN -->';
     const block=`${start}${serviceSection(entries.filter(entry=>entry.services.includes(key)))}${end}`;
