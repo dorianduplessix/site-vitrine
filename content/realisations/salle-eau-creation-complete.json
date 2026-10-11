@@ -1,0 +1,59 @@
+{
+  "title": "Création complète d’une salle d’eau de A à Z",
+  "date": "2026-10-11",
+  "published": true,
+  "city": "",
+  "services": ["renovation-salle-deau"],
+  "summary": "Création complète d’une salle d’eau, avec mise en place des évacuations d’eaux usées, des alimentations en eau froide et eau chaude sanitaire, puis réalisation des aménagements et des finitions.",
+  "cover": "/assets/photos/salle-eau-douche-terminee.webp",
+  "cover_alt": "Salle d’eau terminée avec douche, paroi vitrée et WC",
+  "sections": [
+    {
+      "title": "Du support brut à la pièce terminée",
+      "paragraphs": [
+        "Le chantier a commencé par la création des réseaux nécessaires : évacuations d’eaux usées et alimentations en eau froide sanitaire (EFS) et eau chaude sanitaire (ECS).",
+        "Les plaques de plâtre hydrofuges ont ensuite été mises en place et préparées.",
+        "La zone de douche a ensuite reçu son système d’étanchéité avant la pose du carrelage, réalisée par un artisan partenaire avec lequel je collabore ponctuellement, puis l’installation des équipements."
+      ]
+    },
+    {
+      "title": "Des équipements et des finitions coordonnés",
+      "paragraphs": [
+        "La salle d’eau réunit une douche avec paroi vitrée, un WC et un meuble vasque avec miroir.",
+        "Le carrelage gris, ocre et terre cuite, posé par l’artisan partenaire, structure les différentes zones de la pièce."
+      ]
+    }
+  ],
+  "steps": [
+    "Création et acheminement des évacuations d’eaux usées",
+    "Création et acheminement des alimentations en eau froide sanitaire (EFS) et eau chaude sanitaire (ECS)",
+    "Pose et préparation des plaques de plâtre hydrofuges",
+    "Réalisation de l’étanchéité de la zone de douche",
+    "Coordination avec l’artisan partenaire chargé de la pose du carrelage mural et du sol",
+    "Installation du receveur, de la paroi et de la robinetterie de douche",
+    "Pose du WC, du meuble vasque et du miroir",
+    "Raccords, joints et finitions"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/salle-eau-plaques-platre.webp",
+      "alt": "Salle d’eau avec plaques de plâtre hydrofuges en cours de préparation",
+      "caption": "Préparation des plaques de plâtre hydrofuges et des passages techniques."
+    },
+    {
+      "image": "/assets/photos/salle-eau-etancheite.webp",
+      "alt": "Étanchéité appliquée dans la future zone de douche",
+      "caption": "Traitement de l’étanchéité avant la pose du carrelage."
+    },
+    {
+      "image": "/assets/photos/salle-eau-carrelage.webp",
+      "alt": "Carrelage gris, ocre et terre cuite posé dans la salle d’eau",
+      "caption": "Carrelage mural et sol réalisés par un artisan partenaire."
+    },
+    {
+      "image": "/assets/photos/salle-eau-meuble-vasque.webp",
+      "alt": "Meuble vasque blanc et miroir installés dans la salle d’eau",
+      "caption": "Installation du meuble vasque, de la robinetterie et du miroir."
+    }
+  ]
+}
