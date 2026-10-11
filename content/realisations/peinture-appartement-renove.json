@@ -1,0 +1,46 @@
+{
+  "title": "Mise en peinture complète d’un appartement rénové",
+  "date": "2026-10-11",
+  "published": true,
+  "city": "",
+  "services": ["enduit-peinture-placo"],
+  "summary": "Mise en peinture des murs et des plafonds d’un appartement après rénovation complète, avec application d’un apprêt puis de deux couches de peinture.",
+  "cover": "/assets/photos/peinture-chantier-mur-terracotta.webp",
+  "cover_alt": "Mur terracotta et plafond blanc mis en peinture dans un appartement rénové",
+  "sections": [
+    {
+      "title": "La finition d’une rénovation complète",
+      "paragraphs": [
+        "Après la rénovation complète de l’appartement, les murs et les plafonds ont reçu une couche d’apprêt puis deux couches de peinture.",
+        "Le chantier a été réalisé dans les pièces encore vides, avant la pose des derniers équipements et des finitions électriques."
+      ]
+    },
+    {
+      "title": "Des teintes différentes selon les espaces",
+      "paragraphs": [
+        "Les plafonds blancs apportent de la luminosité et mettent en valeur les couleurs choisies pour les murs.",
+        "Les teintes verte et terracotta permettent de différencier les pièces tout en conservant une finition nette et régulière."
+      ]
+    }
+  ],
+  "steps": [
+    "Protection des éléments conservés et des zones périphériques",
+    "Préparation des murs et des plafonds avant peinture",
+    "Application d’une couche d’apprêt sur les murs et les plafonds",
+    "Application de deux couches de peinture sur les plafonds",
+    "Application de deux couches de peinture sur les murs dans les différentes teintes",
+    "Reprises des angles, raccords et finitions"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/peinture-chantier-mur-vert.webp",
+      "alt": "Murs verts et plafond blanc mis en peinture dans un appartement en rénovation",
+      "caption": "Mise en peinture verte des murs et finition blanche du plafond."
+    },
+    {
+      "image": "/assets/photos/peinture-chantier-mur-terracotta.webp",
+      "alt": "Mur terracotta et plafond blanc pendant la rénovation d’un appartement",
+      "caption": "Mise en peinture terracotta d’un mur, avec plafond et murs adjacents blancs."
+    }
+  ]
+}
