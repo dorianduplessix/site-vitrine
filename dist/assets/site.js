@@ -21,6 +21,31 @@ if(toggle&&links){
   });
 }
 
+document.querySelectorAll('[data-review-carousel]').forEach(carousel=>{
+  const track=carousel.querySelector('[data-review-track]');
+  const previous=document.querySelector('[data-review-prev]');
+  const next=document.querySelector('[data-review-next]');
+  if(!track||!previous||!next)return;
+
+  const cardStep=()=>{
+    const card=track.querySelector('.review');
+    if(!card)return track.clientWidth;
+    const gap=parseFloat(getComputedStyle(track).columnGap)||0;
+    return card.getBoundingClientRect().width+gap;
+  };
+
+  const updateControls=()=>{
+    previous.disabled=track.scrollLeft<=2;
+    next.disabled=track.scrollLeft+track.clientWidth>=track.scrollWidth-2;
+  };
+
+  previous.addEventListener('click',()=>track.scrollBy({left:-cardStep(),behavior:'smooth'}));
+  next.addEventListener('click',()=>track.scrollBy({left:cardStep(),behavior:'smooth'}));
+  track.addEventListener('scroll',updateControls,{passive:true});
+  window.addEventListener('resize',updateControls);
+  updateControls();
+});
+
 const analyticsId='G-32WC2V2WYV';
 const consentKey='duplessix-analytics-consent';
 
