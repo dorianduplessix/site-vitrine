@@ -86,6 +86,37 @@ const startAnalytics=()=>{
 
 const closeConsentBanner=()=>document.querySelector('.cookie-banner')?.remove();
 
+const trackAnalyticsEvent=(eventName,parameters={})=>{
+  if(!window.duplessixAnalyticsLoaded||typeof window.gtag!=='function')return;
+  window.gtag('event',eventName,parameters);
+};
+
+document.addEventListener('click',event=>{
+  const link=event.target.closest('a[href]');
+  if(!link)return;
+
+  const href=link.getAttribute('href')||'';
+  const eventDetails={
+    link_url:link.href,
+    link_text:link.textContent.trim().replace(/\s+/g,' ').slice(0,100),
+    page_path:location.pathname
+  };
+
+  if(href.startsWith('tel:')){
+    trackAnalyticsEvent('contact_click',{...eventDetails,contact_method:'phone'});
+    return;
+  }
+
+  if(href.startsWith('mailto:')){
+    trackAnalyticsEvent('contact_click',{...eventDetails,contact_method:'email'});
+    return;
+  }
+
+  if(link.matches('a.btn[href="/contact.html"],a.btn[href$="/contact.html"]')){
+    trackAnalyticsEvent('quote_request_click',eventDetails);
+  }
+});
+
 const saveConsent=value=>{
   localStorage.setItem(consentKey,value);
   closeConsentBanner();
