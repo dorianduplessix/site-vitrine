@@ -6,7 +6,7 @@ backend:
 
 site_url: https://renovation-guidel.fr
 display_url: https://renovation-guidel.fr
-logo_url: https://renovation-guidel.fr/favicon.svg
+logo_url: https://renovation-guidel.fr/favicon.png
 locale: fr
 publish_mode: simple
 
