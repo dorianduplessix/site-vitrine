@@ -54,6 +54,7 @@ const slugFromFile=file=>basename(file,'.json');
 const pageUrl=slug=>`/realisations/${slug}.html`;
 const absoluteUrl=value=>`https://renovation-guidel.fr${normalizePath(value)}`;
 const businessId='https://renovation-guidel.fr/#business';
+const brandLogo='/assets/brand/logo-duplessix-multi-services.png';
 
 function breadcrumbSchema(items){
   return {
@@ -78,7 +79,9 @@ function footer(){
 
 function head({title,description,canonical,image,type='website',structuredData=[]}){
   const absolute=`https://renovation-guidel.fr${canonical}`;
-  const imageMeta=image?`<meta property="og:image" content="https://renovation-guidel.fr${esc(normalizePath(image))}">`:'';
+  const shareImage=image||brandLogo;
+  const imageUrl=`https://renovation-guidel.fr${esc(normalizePath(shareImage))}`;
+  const imageMeta=`<meta property="og:image" content="${imageUrl}">\n  <meta name="twitter:image" content="${imageUrl}">`;
   const jsonLd=structuredData.length?`  <script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@graph':structuredData}).replace(/</g,'\\u003c')}</script>\n`:'';
   return `<!doctype html>
 <html lang="fr">
@@ -97,7 +100,10 @@ function head({title,description,canonical,image,type='website',structuredData=[
   <meta property="og:title" content="${esc(title)}">
   <meta property="og:description" content="${esc(description)}">
   <meta property="og:url" content="${absolute}">
-${imageMeta?`  ${imageMeta}\n`:''}  <meta name="twitter:card" content="summary_large_image">
+  ${imageMeta}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="${esc(title)}">
+  <meta name="twitter:description" content="${esc(description)}">
 ${jsonLd}
 </head>`;
 }
