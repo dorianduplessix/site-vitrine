@@ -70,7 +70,7 @@ function breadcrumbSchema(items){
 
 function header(){
   return `<a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="site-header"><nav class="nav wrap"><a class="brand" href="/"><span class="brand-mark">D</span><span>Duplessix Multi-Services<small>Rénovation & maintenance</small></span></a><button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale">☰</button><div class="nav-links" id="navigation-principale"><a href="/#services">Services</a><a href="/realisations.html">Réalisations</a><a href="/a-propos.html">Dorian</a><a href="/contact.html">Contact</a></div><a class="btn" href="tel:+33659735020">Appeler</a></nav></header>`;
+  <header class="site-header"><nav class="nav wrap"><a class="brand" href="/"><span class="brand-mark"><img src="/favicon.png" alt="" width="42" height="42"></span><span>Duplessix Multi-Services<small>Rénovation & maintenance</small></span></a><button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale">☰</button><div class="nav-links" id="navigation-principale"><a href="/#services">Services</a><a href="/realisations.html">Réalisations</a><a href="/a-propos.html">Dorian</a><a href="/contact.html">Contact</a></div><a class="btn" href="tel:+33659735020">Appeler</a></nav></header>`;
 }
 
 function footer(){
