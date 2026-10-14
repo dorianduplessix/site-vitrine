@@ -114,6 +114,11 @@ document.addEventListener('click',event=>{
 
   if(link.matches('a.btn[href="/contact.html"],a.btn[href$="/contact.html"]')){
     trackAnalyticsEvent('quote_request_click',eventDetails);
+    return;
+  }
+
+  if(link.matches('[data-google-review]')){
+    trackAnalyticsEvent('google_review_click',eventDetails);
   }
 });
 
