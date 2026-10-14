@@ -2,6 +2,24 @@
   command = "node scripts/build-realisations.mjs"
   publish = "dist"
 
+[[redirects]]
+  from = "/installations-sanitaires"
+  to = "/services/renovation-salle-deau.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/enduit-peinture"
+  to = "/services/enduit-peinture-placo.html"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/salle-de-bain"
+  to = "/services/renovation-salle-deau.html"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
