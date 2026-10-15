@@ -1,0 +1,53 @@
+{
+  "title": "Remplacement d’une hotte hors service",
+  "date": "2026-10-15",
+  "published": true,
+  "city": "Lorient",
+  "seo_title": "Remplacement de hotte et dépannage à Lorient | Duplessix",
+  "seo_description": "Dépannage à Lorient : dépose d’une hotte hors service, démontage du meuble de cuisine et pose d’une hotte neuve pour une agence immobilière.",
+  "services": ["petits-travaux", "maintenance-immobiliere"],
+  "summary": "Intervention dans un appartement à la demande d’une agence immobilière : dépose de l’ancienne hotte, démontage et vidage du meuble de cuisine, puis installation de la nouvelle hotte.",
+  "cover": "/assets/photos/remplacement-hotte-03-apres.webp",
+  "cover_alt": "Nouvelle hotte installée dans le meuble de cuisine d’un appartement à Lorient",
+  "sections": [
+    {
+      "title": "Un dépannage demandé par une agence immobilière",
+      "paragraphs": [
+        "La hotte de l’appartement était hors service. L’agence immobilière chargée du logement a demandé son remplacement afin de rétablir rapidement cet équipement de cuisine.",
+        "L’intervention a été organisée dans le logement avec un périmètre précis : déposer l’équipement défectueux, accéder à l’intérieur du meuble et installer la nouvelle hotte."
+      ]
+    },
+    {
+      "title": "Dépose, accès au meuble et remplacement",
+      "paragraphs": [
+        "L’ancienne hotte a d’abord été déposée. Le meuble de cuisine a ensuite été vidé et partiellement démonté pour libérer l’accès nécessaire au remplacement.",
+        "Après la pose et l’ajustement de la nouvelle hotte, le meuble a été remis en configuration et le fonctionnement de l’équipement a été vérifié."
+      ]
+    }
+  ],
+  "steps": [
+    "Protection et préparation de la zone d’intervention",
+    "Dépose de la hotte hors service",
+    "Vidage et démontage partiel du meuble de cuisine",
+    "Préparation de l’emplacement",
+    "Pose et ajustement de la nouvelle hotte",
+    "Remontage du meuble et vérification du fonctionnement"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/remplacement-hotte-01-avant.webp",
+      "alt": "Ancienne hotte hors service avant son remplacement dans un appartement à Lorient",
+      "caption": "La hotte hors service avant l’intervention."
+    },
+    {
+      "image": "/assets/photos/remplacement-hotte-02-depose.webp",
+      "alt": "Hotte déposée et meuble de cuisine ouvert pendant le dépannage",
+      "caption": "Dépose de la hotte et ouverture du meuble de cuisine."
+    },
+    {
+      "image": "/assets/photos/remplacement-hotte-03-apres.webp",
+      "alt": "Nouvelle hotte posée et meuble de cuisine remonté à Lorient",
+      "caption": "La nouvelle hotte installée et remise en service."
+    }
+  ]
+}
