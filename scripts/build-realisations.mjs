@@ -10,7 +10,7 @@ const distDir=join(root,'dist');
 const services={
   'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau.html',file:'renovation-salle-deau.html',seoTitle:'Rénovation de salle d’eau à Guidel et Lorient | Duplessix',seoDescription:'Création ou rénovation de salle d’eau autour de Guidel : réseaux, douche, WC, vasque, étanchéité, peinture et finitions. Devis gratuit.'},
   'enduit-peinture-placo':{label:'Enduit, peinture & placo',url:'/services/enduit-peinture-placo.html',file:'enduit-peinture-placo.html',seoTitle:'Peinture, enduit et placo à Guidel et Lorient | Duplessix',seoDescription:'Préparation des supports, enduit, bandes, placo et peinture intérieure à Guidel, Lorient et Quimperlé. Travaux soignés et devis gratuit.'},
-  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux.html',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage sanitaire à Guidel | Duplessix',seoDescription:'Dépannage et petits travaux à Guidel et Lorient : robinetterie, WC, joints, réparations, remplacement d’équipements et finitions.'},
+  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux.html',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage à Guidel et Lorient | Duplessix',seoDescription:'Petits travaux, dépannage et réparations de logement autour de Guidel et Lorient : sanitaire, joints, fixations, équipements et remise en état.'},
   'exterieurs':{label:'Extérieurs & menuiseries',url:'/services/exterieurs.html',file:'exterieurs.html',seoTitle:'Menuiseries, abris et travaux bois à Guidel | Duplessix',seoDescription:'Fabrication de volets, abris, structures bois, ponçage et lasure autour de Guidel, Lorient et Quimperlé. Découvrez les réalisations.'},
   'maintenance-immobiliere':{label:'Maintenance immobilière',url:'/services/maintenance-immobiliere.html',file:'maintenance-immobiliere.html',seoTitle:'Maintenance immobilière à Guidel et Lorient | Duplessix',seoDescription:'Remise en état et réparations de logements pour propriétaires, bailleurs et agences autour de Guidel et Lorient. Suivi direct par Dorian.'}
 };
@@ -241,7 +241,10 @@ async function updateServicePages(entries){
           serviceType:service.label,
           description:service.seoDescription,
           url:pageAbsolute,
-          areaServed:['Guidel','Lorient','Quimperlé','Quéven','Ploemeur','Hennebont'].map(name=>({'@type':'City',name})),
+          areaServed:(['petits-travaux','maintenance-immobiliere'].includes(key)
+            ? ['Guidel','Lorient','Quimperlé','Quéven','Ploemeur','Gestel','Lanester','Caudan','Larmor-Plage','Pont-Scorff','Hennebont','Clohars-Carnoët']
+            : ['Guidel','Lorient','Quimperlé','Quéven','Ploemeur','Hennebont']
+          ).map(name=>({'@type':'City',name})),
           provider:{'@type':'HomeAndConstructionBusiness','@id':businessId,name:'Duplessix Multi-Services',url:'https://renovation-guidel.fr/',telephone:'+33659735020'}
         },
         breadcrumbSchema([
