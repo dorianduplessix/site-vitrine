@@ -8,11 +8,11 @@ const outputDir=join(root,'dist','realisations');
 const distDir=join(root,'dist');
 
 const services={
-  'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau.html',file:'renovation-salle-deau.html',seoTitle:'Rénovation de salle d’eau à Guidel et Lorient | Duplessix',seoDescription:'Création ou rénovation de salle d’eau autour de Guidel : réseaux, douche, WC, vasque, étanchéité, peinture et finitions. Devis gratuit.'},
-  'enduit-peinture-placo':{label:'Enduit, peinture & placo',url:'/services/enduit-peinture-placo.html',file:'enduit-peinture-placo.html',seoTitle:'Peinture, enduit et placo à Guidel et Lorient | Duplessix',seoDescription:'Préparation des supports, enduit, bandes, placo et peinture intérieure à Guidel, Lorient et Quimperlé. Travaux soignés et devis gratuit.'},
-  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux.html',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage à Guidel et Lorient | Duplessix',seoDescription:'Petits travaux, dépannage et réparations de logement autour de Guidel et Lorient : sanitaire, joints, fixations, équipements et remise en état.'},
-  'exterieurs':{label:'Extérieurs & menuiseries',url:'/services/exterieurs.html',file:'exterieurs.html',seoTitle:'Menuiseries, abris et travaux bois à Guidel | Duplessix',seoDescription:'Fabrication de volets, abris, structures bois, ponçage et lasure autour de Guidel, Lorient et Quimperlé. Découvrez les réalisations.'},
-  'maintenance-immobiliere':{label:'Maintenance immobilière',url:'/services/maintenance-immobiliere.html',file:'maintenance-immobiliere.html',seoTitle:'Maintenance immobilière à Guidel et Lorient | Duplessix',seoDescription:'Remise en état et réparations de logements pour propriétaires, bailleurs et agences autour de Guidel et Lorient. Suivi direct par Dorian.'}
+  'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau',file:'renovation-salle-deau.html',seoTitle:'Rénovation de salle d’eau à Guidel et Lorient | Duplessix',seoDescription:'Création ou rénovation de salle d’eau autour de Guidel : réseaux, douche, WC, vasque, étanchéité, peinture et finitions. Devis gratuit.'},
+  'enduit-peinture-placo':{label:'Enduit, peinture & placo',url:'/services/enduit-peinture-placo',file:'enduit-peinture-placo.html',seoTitle:'Peinture, enduit et placo à Guidel et Lorient | Duplessix',seoDescription:'Préparation des supports, enduit, bandes, placo et peinture intérieure à Guidel, Lorient et Quimperlé. Travaux soignés et devis gratuit.'},
+  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage à Guidel et Lorient | Duplessix',seoDescription:'Petits travaux, dépannage et réparations de logement autour de Guidel et Lorient : sanitaire, joints, fixations, équipements et remise en état.'},
+  'exterieurs':{label:'Extérieurs & menuiseries',url:'/services/exterieurs',file:'exterieurs.html',seoTitle:'Menuiseries, abris et travaux bois à Guidel | Duplessix',seoDescription:'Fabrication de volets, abris, structures bois, ponçage et lasure autour de Guidel, Lorient et Quimperlé. Découvrez les réalisations.'},
+  'maintenance-immobiliere':{label:'Maintenance immobilière',url:'/services/maintenance-immobiliere',file:'maintenance-immobiliere.html',seoTitle:'Maintenance immobilière à Guidel et Lorient | Duplessix',seoDescription:'Remise en état et réparations de logements pour propriétaires, bailleurs et agences autour de Guidel et Lorient. Suivi direct par Dorian.'}
 };
 
 const serviceEvidence={
@@ -67,7 +67,7 @@ const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({
 
 const normalizePath=value=>String(value??'').startsWith('/')?String(value):`/${value}`;
 const slugFromFile=file=>basename(file,'.json');
-const pageUrl=slug=>`/realisations/${slug}.html`;
+const pageUrl=slug=>`/realisations/${slug}`;
 const absoluteUrl=value=>`https://renovation-guidel.fr${normalizePath(value)}`;
 const businessId='https://renovation-guidel.fr/#business';
 const brandLogo='/assets/brand/logo-duplessix-multi-services.png';
@@ -86,11 +86,11 @@ function breadcrumbSchema(items){
 
 function header(){
   return `<a class="skip-link" href="#contenu">Aller au contenu</a>
-  <header class="site-header"><nav class="nav wrap"><a class="brand" href="/"><span class="brand-mark"><img src="/favicon.png" alt="" width="42" height="42"></span><span>Duplessix Multi-Services<small>Rénovation & maintenance</small></span></a><button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale">☰</button><div class="nav-links" id="navigation-principale"><a href="/#services">Services</a><a href="/realisations.html">Réalisations</a><a href="/a-propos.html">Dorian</a><a href="/contact.html">Contact</a></div><a class="btn" href="tel:+33659735020">Appeler</a></nav></header>`;
+  <header class="site-header"><nav class="nav wrap"><a class="brand" href="/"><span class="brand-mark"><img src="/favicon.png" alt="" width="42" height="42"></span><span>Duplessix Multi-Services<small>Rénovation & maintenance</small></span></a><button class="nav-toggle" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navigation-principale">☰</button><div class="nav-links" id="navigation-principale"><a href="/#services">Services</a><a href="/realisations">Réalisations</a><a href="/a-propos">Dorian</a><a href="/contact">Contact</a></div><a class="btn" href="tel:+33659735020">Appeler</a></nav></header>`;
 }
 
 function footer(){
-  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/mentions.html">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-1"></script>`;
+  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/mentions">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-1"></script>`;
 }
 
 function head({title,description,canonical,image,type='website',structuredData=[]}){
@@ -140,10 +140,10 @@ function renderListing(entries){
   const description='Découvrez les chantiers réalisés par Dorian Duplessix : dépannage, petits travaux, salles d’eau, peinture, menuiserie et travaux bois autour de Guidel.';
   const collectionSchema={
     '@type':'CollectionPage',
-    '@id':'https://renovation-guidel.fr/realisations.html#page',
+    '@id':'https://renovation-guidel.fr/realisations#page',
     name:title,
     description,
-    url:'https://renovation-guidel.fr/realisations.html',
+    url:'https://renovation-guidel.fr/realisations',
     inLanguage:'fr-FR',
     mainEntity:{
       '@type':'ItemList',
@@ -155,14 +155,14 @@ function renderListing(entries){
       }))
     }
   };
-  const breadcrumbs=breadcrumbSchema([{name:'Accueil',url:'/'},{name:'Réalisations',url:'/realisations.html'}]);
-  return `${head({title,description,canonical:'/realisations.html',structuredData:[collectionSchema,breadcrumbs]})}
+  const breadcrumbs=breadcrumbSchema([{name:'Accueil',url:'/'},{name:'Réalisations',url:'/realisations'}]);
+  return `${head({title,description,canonical:'/realisations',structuredData:[collectionSchema,breadcrumbs]})}
 <body>
   ${header()}
   <main id="contenu">
     <section class="page-hero"><div class="wrap"><div class="breadcrumbs"><a href="/">Accueil</a> / Réalisations</div><p class="eyebrow">Carnet de chantiers</p><h1>Des réalisations expliquées en détail.</h1><p class="lead">Chaque fiche présente le besoin, les travaux effectués et les photos du chantier. De nouvelles réalisations seront ajoutées régulièrement.</p></div></section>
     <section class="section white"><div class="wrap"><div class="realisation-grid">${cards}</div></div></section>
-    <section class="cta"><div class="cta-box wrap"><div><h2>Vous avez un projet similaire ?</h2><p>Présentez votre besoin directement à Dorian.</p></div><div class="cta-actions"><a class="btn" href="/contact.html">Demander un devis</a></div></div></section>
+    <section class="cta"><div class="cta-box wrap"><div><h2>Vous avez un projet similaire ?</h2><p>Présentez votre besoin directement à Dorian.</p></div><div class="cta-actions"><a class="btn" href="/contact">Demander un devis</a></div></div></section>
   </main>
   ${footer()}
 </body>
@@ -191,21 +191,21 @@ function renderDetail(entry){
     inLanguage:'fr-FR',
     ...(entry.city?{contentLocation:{'@type':'Place',name:entry.city}}:{}),
     about:linked.map(item=>({'@type':'Service',name:item.label,url:absoluteUrl(item.url)})),
-    author:{'@type':'Person',name:'Dorian Duplessix',url:'https://renovation-guidel.fr/a-propos.html'},
+    author:{'@type':'Person',name:'Dorian Duplessix',url:'https://renovation-guidel.fr/a-propos'},
     publisher:{'@type':'Organization','@id':businessId,name:'Duplessix Multi-Services',url:'https://renovation-guidel.fr/'},
     mainEntityOfPage:{'@type':'WebPage','@id':absoluteUrl(pageUrl(entry.slug))}
   };
   const breadcrumbs=breadcrumbSchema([
     {name:'Accueil',url:'/'},
-    {name:'Réalisations',url:'/realisations.html'},
+    {name:'Réalisations',url:'/realisations'},
     {name:entry.title,url:pageUrl(entry.slug)}
   ]);
   return `${head({title:seoTitle,description:seoDescription,canonical:pageUrl(entry.slug),image:entry.cover,type:'article',structuredData:[articleSchema,breadcrumbs]})}
 <body>
   ${header()}
   <main id="contenu">
-    <section class="page-hero realisation-hero"><div class="wrap"><div class="breadcrumbs"><a href="/">Accueil</a> / <a href="/realisations.html">Réalisations</a> / ${esc(entry.title)}</div><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h1>${esc(entry.title)}</h1><p class="lead">${esc(entry.summary)}</p><div class="realisation-meta">${location}${date}</div></div></section>
-    <div class="page-layout wrap"><article class="page-copy realisation-detail"><img class="feature-image realisation-cover" src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="eager" decoding="async">${sections}${steps}${gallery}${serviceBlock}</article><aside class="aside"><h3>Un projet similaire ?</h3><p>Expliquez votre besoin et joignez vos photos après le premier échange.</p><a class="btn" href="/contact.html">Demander un devis</a><a class="btn secondary" href="/realisations.html">Toutes les réalisations</a></aside></div>
+    <section class="page-hero realisation-hero"><div class="wrap"><div class="breadcrumbs"><a href="/">Accueil</a> / <a href="/realisations">Réalisations</a> / ${esc(entry.title)}</div><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h1>${esc(entry.title)}</h1><p class="lead">${esc(entry.summary)}</p><div class="realisation-meta">${location}${date}</div></div></section>
+    <div class="page-layout wrap"><article class="page-copy realisation-detail"><img class="feature-image realisation-cover" src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="eager" decoding="async">${sections}${steps}${gallery}${serviceBlock}</article><aside class="aside"><h3>Un projet similaire ?</h3><p>Expliquez votre besoin et joignez vos photos après le premier échange.</p><a class="btn" href="/contact">Demander un devis</a><a class="btn secondary" href="/realisations">Toutes les réalisations</a></aside></div>
   </main>
   ${footer()}
 </body>
@@ -216,7 +216,7 @@ function serviceSection(entries,key){
   if(!entries.length)return '';
   const evidence=serviceEvidence[key];
   const proof=evidence?`<div class="service-realisation-proof"><p>${esc(evidence.intro)}</p><ul>${evidence.points.map(point=>`<li>${esc(point)}</li>`).join('')}</ul></div>`:'';
-  return `<section class="service-realizations"><h2>Ce que montrent les chantiers réalisés</h2>${proof}<div class="service-realisation-grid">${entries.map(entry=>card(entry,{compact:true})).join('')}</div><a class="text-link service-realisation-all" href="/realisations.html">Voir toutes les réalisations →</a></section>`;
+  return `<section class="service-realizations"><h2>Ce que montrent les chantiers réalisés</h2>${proof}<div class="service-realisation-grid">${entries.map(entry=>card(entry,{compact:true})).join('')}</div><a class="text-link service-realisation-all" href="/realisations">Voir toutes les réalisations →</a></section>`;
 }
 
 async function updateServicePages(entries){
@@ -271,18 +271,18 @@ async function updateServicePages(entries){
 async function updateSitemap(entries){
   const staticPaths=[
     '/',
-    '/a-propos.html',
-    '/realisations.html',
-    '/contact.html',
-    '/services/renovation-salle-deau.html',
-    '/services/enduit-peinture-placo.html',
-    '/services/petits-travaux.html',
-    '/services/exterieurs.html',
-    '/services/maintenance-immobiliere.html'
+    '/a-propos',
+    '/realisations',
+    '/contact',
+    '/services/renovation-salle-deau',
+    '/services/enduit-peinture-placo',
+    '/services/petits-travaux',
+    '/services/exterieurs',
+    '/services/maintenance-immobiliere'
   ];
-  const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc></url>`);
+  const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>2026-10-21</lastmod></url>`);
   for(const entry of entries){
-    const lastmod=entry.date?`<lastmod>${esc(entry.date)}</lastmod>`:'';
+    const lastmod='<lastmod>2026-10-21</lastmod>';
     urls.push(`<url><loc>https://renovation-guidel.fr${pageUrl(entry.slug)}</loc>${lastmod}</url>`);
   }
   const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  ${urls.join('\n  ')}\n</urlset>\n`;

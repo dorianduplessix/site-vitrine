@@ -4,19 +4,19 @@
 
 [[redirects]]
   from = "/installations-sanitaires"
-  to = "/services/renovation-salle-deau.html"
+  to = "/services/renovation-salle-deau"
   status = 301
   force = true
 
 [[redirects]]
   from = "/enduit-peinture"
-  to = "/services/enduit-peinture-placo.html"
+  to = "/services/enduit-peinture-placo"
   status = 301
   force = true
 
 [[redirects]]
   from = "/salle-de-bain"
-  to = "/services/renovation-salle-deau.html"
+  to = "/services/renovation-salle-deau"
   status = 301
   force = true
 

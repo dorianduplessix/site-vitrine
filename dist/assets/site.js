@@ -79,7 +79,7 @@ const startAnalytics=()=>{
   script.src=`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
   document.head.appendChild(script);
 
-  if(location.pathname==='/merci'||location.pathname==='/merci.html'){
+  if(location.pathname==='/merci'){
     window.gtag('event','generate_lead');
   }
 };
@@ -112,7 +112,7 @@ document.addEventListener('click',event=>{
     return;
   }
 
-  if(link.matches('a.btn[href="/contact.html"],a.btn[href$="/contact.html"]')){
+  if(link.matches('a.btn[href="/contact"],a.btn[href$="/contact"]')){
     trackAnalyticsEvent('quote_request_click',eventDetails);
     return;
   }
@@ -134,7 +134,7 @@ const showConsentBanner=()=>{
   banner.className='cookie-banner';
   banner.setAttribute('role','dialog');
   banner.setAttribute('aria-labelledby','cookie-title');
-  banner.innerHTML=`<div class="cookie-banner__content"><div><h2 id="cookie-title">Mesure d’audience</h2><p>Ce site utilise Google Analytics uniquement avec votre accord pour comprendre sa fréquentation. Vous pouvez accepter ou refuser sans conséquence sur votre navigation. <a href="/mentions.html#cookies">En savoir plus</a>.</p></div><div class="cookie-banner__actions"><button class="btn secondary" type="button" data-consent="denied">Refuser</button><button class="btn" type="button" data-consent="granted">Accepter</button></div></div>`;
+  banner.innerHTML=`<div class="cookie-banner__content"><div><h2 id="cookie-title">Mesure d’audience</h2><p>Ce site utilise Google Analytics uniquement avec votre accord pour comprendre sa fréquentation. Vous pouvez accepter ou refuser sans conséquence sur votre navigation. <a href="/mentions#cookies">En savoir plus</a>.</p></div><div class="cookie-banner__actions"><button class="btn secondary" type="button" data-consent="denied">Refuser</button><button class="btn" type="button" data-consent="granted">Accepter</button></div></div>`;
   banner.querySelectorAll('[data-consent]').forEach(button=>{
     button.addEventListener('click',()=>saveConsent(button.dataset.consent));
   });
