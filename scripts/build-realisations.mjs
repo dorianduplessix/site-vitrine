@@ -35,11 +35,12 @@ const serviceEvidence={
     ]
   },
   'petits-travaux':{
-    intro:'Une intervention réalisée à Lorient pour une agence immobilière illustre la prise en charge complète d’un petit dépannage dans un logement.',
+    intro:'Les chantiers publiés montrent la prise en charge de dépannages variés, du remplacement d’un équipement dans un logement à la réparation de vitrages anciens.',
     points:[
       'Dépose d’un équipement hors service',
       'Démontage partiel du meuble pour accéder à l’installation',
-      'Pose, ajustement et vérification de la nouvelle hotte'
+      'Pose, ajustement et vérification de la nouvelle hotte',
+      'Remplacement de carreaux simple vitrage et finition au mastic de vitrier'
     ]
   },
   'maintenance-immobiliere':{
@@ -51,12 +52,13 @@ const serviceEvidence={
     ]
   },
   'exterieurs':{
-    intro:'Les chantiers publiés à Kernascléden, Guidel, Pont-Scorff et Inzinzac-Lochrist montrent des interventions de construction, de fabrication et de remise en état du bois.',
+    intro:'Les chantiers publiés montrent des interventions de construction, de fabrication et de remise en état du bois, ainsi que la réparation ponctuelle de fenêtres anciennes.',
     points:[
       'Construction d’un abri pour bois avec couverture en bac acier imitation tuiles',
       'Création d’un local de stockage en ossature bois et panneaux OSB',
       'Ponçage complet et application d’une lasure sur un cabanon',
-      'Fabrication de volets en bois exotique reproduits à l’identique'
+      'Fabrication de volets en bois exotique reproduits à l’identique',
+      'Remplacement de carreaux simples sur des fenêtres anciennes avec pose au mastic'
     ]
   }
 };
@@ -282,7 +284,7 @@ async function updateSitemap(entries){
   ];
   const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>2026-10-21</lastmod></url>`);
   for(const entry of entries){
-    const lastmod='<lastmod>2026-10-21</lastmod>';
+    const lastmod=`<lastmod>${entry.modified||entry.date||'2026-10-21'}</lastmod>`;
     urls.push(`<url><loc>https://renovation-guidel.fr${pageUrl(entry.slug)}</loc>${lastmod}</url>`);
   }
   const sitemap=`<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n  ${urls.join('\n  ')}\n</urlset>\n`;

@@ -1,0 +1,73 @@
+{
+  "title": "Remplacement de vitrages sur des fenêtres du XVIIIe siècle",
+  "date": "2026-10-26",
+  "published": true,
+  "city": "Nantes",
+  "seo_title": "Remplacement de vitrages anciens à Nantes | Duplessix",
+  "seo_description": "Remplacement d’une dizaine de carreaux simple vitrage de 55 × 63 cm sur des fenêtres du XVIIIe siècle à Nantes, avec pose traditionnelle au mastic.",
+  "services": ["petits-travaux", "exterieurs"],
+  "summary": "Remplacement d’une dizaine de carreaux simple vitrage de 55 × 63 cm, brisés lors des manifestations du 18 septembre, sur des fenêtres du XVIIIe siècle situées dans d’anciens salons nantais.",
+  "cover": "/assets/photos/remplacement-carreau-03-apres.webp",
+  "cover_alt": "Carreaux remplacés sur une fenêtre du XVIIIe siècle dans un ancien salon à Nantes",
+  "sections": [
+    {
+      "title": "Des vitrages brisés sur des fenêtres anciennes",
+      "paragraphs": [
+        "L’intervention concernait une dizaine de carreaux simple vitrage de 55 × 63 cm, brisés pendant les manifestations du 18 septembre.",
+        "Les carreaux équipaient des fenêtres du XVIIIe siècle dans de très anciens salons nantais. Le travail devait donc conserver les menuiseries existantes, leurs irrégularités et leur caractère ancien."
+      ]
+    },
+    {
+      "title": "Dépose des carreaux cassés et préparation des feuillures",
+      "paragraphs": [
+        "La zone de travail a d’abord été protégée et sécurisée. Les morceaux de verre encore présents ont été retirés avec précaution, carreau par carreau.",
+        "L’ancien mastic et les fixations ont ensuite été déposés afin de dégager les feuillures. Chaque emplacement a été nettoyé et contrôlé avant la pose du nouveau vitrage."
+      ]
+    },
+    {
+      "title": "Pose des nouveaux carreaux et finition au mastic",
+      "paragraphs": [
+        "Les nouveaux carreaux simple vitrage ont été préparés aux dimensions de 55 × 63 cm, puis positionnés dans les châssis existants.",
+        "Après leur maintien, un mastic de vitrier a été appliqué et lissé sur le pourtour. Cette finition traditionnelle assure la tenue du vitrage tout en restant cohérente avec les fenêtres anciennes."
+      ]
+    },
+    {
+      "title": "Une intervention exceptionnellement réalisée à Nantes",
+      "paragraphs": [
+        "Duplessix Multi-Services intervient habituellement autour de Guidel, Lorient et dans les communes proches. Ce chantier à Nantes répondait à une situation ponctuelle et reste exceptionnel ; il ne correspond pas à la zone d’intervention habituelle de l’entreprise."
+      ]
+    }
+  ],
+  "steps": [
+    "Protection des salons et sécurisation de la zone de travail",
+    "Repérage des carreaux brisés et contrôle des dimensions",
+    "Retrait soigneux des morceaux de verre",
+    "Dépose de l’ancien mastic et des fixations",
+    "Nettoyage et préparation des feuillures",
+    "Mise en place des carreaux simple vitrage de 55 × 63 cm",
+    "Application et lissage du mastic de vitrier",
+    "Nettoyage final et contrôle de l’ensemble"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/remplacement-carreau-01-vitrage-casse.webp",
+      "alt": "Carreau cassé sur une fenêtre ancienne à Nantes avant son remplacement",
+      "caption": "Un des carreaux brisés avant la dépose."
+    },
+    {
+      "image": "/assets/photos/remplacement-carreau-02-vitrage-casse.webp",
+      "alt": "Fissures visibles sur un simple vitrage ancien avant intervention",
+      "caption": "Second vitrage endommagé et fissuré."
+    },
+    {
+      "image": "/assets/photos/remplacement-carreau-03-apres.webp",
+      "alt": "Nouveaux carreaux posés sur une fenêtre du XVIIIe siècle à Nantes",
+      "caption": "Les nouveaux carreaux en place dans les châssis existants."
+    },
+    {
+      "image": "/assets/photos/remplacement-carreau-04-detail-mastic.webp",
+      "alt": "Détail du mastic de vitrier appliqué autour du nouveau carreau",
+      "caption": "Détail de la finition traditionnelle au mastic de vitrier."
+    }
+  ]
+}
