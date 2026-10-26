@@ -79,7 +79,7 @@ const startAnalytics=()=>{
   script.src=`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
   document.head.appendChild(script);
 
-  if(location.pathname==='/merci'){
+  if(/^\/merci(?:\.html)?\/?$/.test(location.pathname)){
     window.gtag('event','generate_lead');
   }
 };
