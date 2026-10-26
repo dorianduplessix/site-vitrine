@@ -103,12 +103,12 @@ document.addEventListener('click',event=>{
   };
 
   if(href.startsWith('tel:')){
-    trackAnalyticsEvent('contact_click',{...eventDetails,contact_method:'phone'});
+    trackAnalyticsEvent('phone_click',eventDetails);
     return;
   }
 
   if(href.startsWith('mailto:')){
-    trackAnalyticsEvent('contact_click',{...eventDetails,contact_method:'email'});
+    trackAnalyticsEvent('email_click',eventDetails);
     return;
   }
 

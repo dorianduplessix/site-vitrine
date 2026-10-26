@@ -92,7 +92,7 @@ function header(){
 }
 
 function footer(){
-  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/mentions">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-2"></script>`;
+  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/mentions">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-3"></script>`;
 }
 
 function head({title,description,canonical,image,type='website',structuredData=[]}){
