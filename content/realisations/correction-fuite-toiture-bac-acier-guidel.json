@@ -1,0 +1,78 @@
+{
+  "title": "Correction d’une fuite sur une toiture en bac acier",
+  "date": "2026-10-29",
+  "published": true,
+  "city": "Guidel",
+  "seo_title": "Fuite sur toiture bac acier d’un cabanon à Guidel | Duplessix",
+  "seo_description": "Réparation ciblée d’un cabanon à Guidel : rallonge sous une couverture en bac acier feutré trop courte pour stopper les remontées d’eau vers l’intérieur.",
+  "services": ["petits-travaux", "exterieurs", "maintenance-immobiliere"],
+  "summary": "Solution intermédiaire sur un cabanon de jardin : ajout d’une rallonge sous des bacs acier feutrés trop courts, responsables d’une remontée d’eau d’environ 40 cm vers l’intérieur.",
+  "cover": "/assets/photos/remplacement-toiture-05-apres-detail.webp",
+  "cover_alt": "Rallonge en bac acier posée en bas de pente avec un débord suffisant devant le bardage",
+  "sections": [
+    {
+      "title": "Une couverture trop courte en bas de pente",
+      "paragraphs": [
+        "La couverture en bac acier avec feutre anticondensation en sous-face s’arrêtait trop près du mur en bas de versant. Le débord insuffisant ne permettait pas de rejeter correctement les eaux pluviales à l’extérieur de la construction.",
+        "Lors des pluies, l’eau atteignait la sous-face des bacs. Le feutre anticondensation l’absorbait et favorisait sa migration par capillarité sur environ 40 cm vers l’intérieur du cabanon. Les traces visibles sur le bois confirmaient également le défaut d’évacuation en bas de pente."
+      ]
+    },
+    {
+      "title": "Une réfection complète initialement préconisée",
+      "paragraphs": [
+        "Compte tenu de la configuration de la toiture du cabanon et du défaut de longueur des bacs existants, la préconisation initiale portait sur une réfection complète de la couverture.",
+        "Afin de proposer une solution adaptée au budget et au besoin immédiat du client, une intervention intermédiaire a finalement été définie avec son accord : conserver la couverture existante et prolonger uniquement sa partie basse."
+      ]
+    },
+    {
+      "title": "Prolongement de la couverture existante",
+      "paragraphs": [
+        "Des éléments complémentaires en bac acier ont été positionnés sous les tôles existantes, dans le sens de l’écoulement, avec un recouvrement suffisant entre les deux parties.",
+        "Les profils ont été alignés afin d’assurer la continuité du cheminement de l’eau et de créer un débord plus important en bas de pente."
+      ]
+    },
+    {
+      "title": "Un rejet des eaux éloigné du bardage",
+      "paragraphs": [
+        "La nouvelle longueur crée désormais un débord plus important en bas de pente. L’eau est ainsi conduite au-delà du nu du mur au lieu de revenir sous la couverture et de s’écouler contre le bois.",
+        "Cette intervention constitue une réparation localisée du bas de versant ; elle ne correspond pas à une réfection complète de la toiture."
+      ]
+    }
+  ],
+  "steps": [
+    "Inspection du bas de versant et repérage de la remontée d’eau dans le feutre anticondensation",
+    "Mesure du débord nécessaire devant le bardage",
+    "Préparation des éléments complémentaires en bac acier",
+    "Mise en place des rallonges sous la couverture existante",
+    "Création d’un recouvrement suffisant dans le sens de l’écoulement",
+    "Alignement des profils et fixation des nouveaux éléments",
+    "Contrôle du débord obtenu en bas de pente"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/remplacement-toiture-01-avant-detail.webp",
+      "alt": "Bacs acier trop courts en bas de pente avec traces de ruissellement sur le bardage",
+      "caption": "Le faible débord de la couverture et les traces de ruissellement avant l’intervention."
+    },
+    {
+      "image": "/assets/photos/remplacement-toiture-02-avant-ensemble.webp",
+      "alt": "Vue d’ensemble de la couverture en bac acier avant la correction du bas de pente",
+      "caption": "Vue d’ensemble de la couverture existante avant la pose des rallonges."
+    },
+    {
+      "image": "/assets/photos/remplacement-toiture-03-sous-face.webp",
+      "alt": "Rallonge en bac acier placée sous la couverture existante avec recouvrement",
+      "caption": "Vue par-dessous des nouveaux éléments glissés sous la couverture existante."
+    },
+    {
+      "image": "/assets/photos/remplacement-toiture-04-apres-ensemble.webp",
+      "alt": "Vue d’ensemble du prolongement en bac acier après intervention à Guidel",
+      "caption": "La couverture prolongée avec un recouvrement continu entre les éléments."
+    },
+    {
+      "image": "/assets/photos/remplacement-toiture-05-apres-detail.webp",
+      "alt": "Détail du nouveau débord en bac acier destiné à éloigner l’eau du mur",
+      "caption": "Le nouveau débord en bas de pente rejette désormais l’eau à distance du bardage."
+    }
+  ]
+}
