@@ -1,0 +1,60 @@
+{
+  "title": "Remise en place d’un radiateur arraché du mur",
+  "date": "2026-10-29",
+  "published": true,
+  "city": "Guidel",
+  "seo_title": "Radiateur arraché du mur réparé à Guidel | Duplessix",
+  "seo_description": "Dépannage à Guidel : rebouchage des trous à l’enduit, pose de fixations adaptées au support et remise en place d’un radiateur mural.",
+  "services": ["petits-travaux", "maintenance-immobiliere"],
+  "summary": "Remise en place d’un radiateur arraché du mur : reprise des trous à l’enduit, nouvelles fixations adaptées au support et repose sécurisée de l’appareil.",
+  "cover": "/assets/photos/radiateur-arrache-03-remise-en-place.webp",
+  "cover_alt": "Radiateur mural remis en place avec de nouvelles fixations adaptées au support",
+  "sections": [
+    {
+      "title": "Un radiateur arraché de ses fixations",
+      "paragraphs": [
+        "Le radiateur avait été arraché du mur, laissant les anciens points de fixation endommagés et l’appareil posé au sol.",
+        "L’objectif de cette petite intervention était de réparer les zones abîmées, de choisir des fixations adaptées à la nature du support et de remettre le radiateur en place de manière stable."
+      ]
+    },
+    {
+      "title": "Rebouchage et nouvelles fixations",
+      "paragraphs": [
+        "Les trous et parties fragilisées ont été nettoyés puis rebouchés avec un enduit adapté. Cette reprise a permis de repartir sur une zone saine avant la repose de l’appareil.",
+        "De nouveaux points d’ancrage ont ensuite été réalisés avec des fixations adaptées au support, puis les consoles ont été positionnées pour retrouver l’alignement du radiateur."
+      ]
+    },
+    {
+      "title": "Remise en place du radiateur",
+      "paragraphs": [
+        "Le radiateur a été reposé sur ses nouvelles fixations et sa stabilité a été contrôlée en fin d’intervention.",
+        "Les retouches de peinture autour des anciennes fixations et des reprises d’enduit n’étaient pas comprises dans cette prestation."
+      ]
+    }
+  ],
+  "steps": [
+    "Mise en sécurité du radiateur arraché",
+    "Nettoyage des anciens points de fixation",
+    "Rebouchage des trous avec un enduit adapté",
+    "Repérage des nouveaux points d’ancrage",
+    "Pose de fixations adaptées au support",
+    "Remise en place et contrôle de la stabilité du radiateur"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/radiateur-arrache-01-avant.webp",
+      "alt": "Radiateur arraché du mur et anciens trous de fixation endommagés avant intervention",
+      "caption": "Le radiateur et les points de fixation endommagés avant l’intervention."
+    },
+    {
+      "image": "/assets/photos/radiateur-arrache-02-rebouchage.webp",
+      "alt": "Trous de fixation rebouchés à l’enduit avant la pose de nouveaux ancrages",
+      "caption": "Reprise à l’enduit des anciens trous et des zones fragilisées."
+    },
+    {
+      "image": "/assets/photos/radiateur-arrache-03-remise-en-place.webp",
+      "alt": "Radiateur mural remis en place après création de nouvelles fixations",
+      "caption": "Le radiateur remis en place sur des fixations adaptées au support."
+    }
+  ]
+}
