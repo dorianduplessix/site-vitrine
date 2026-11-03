@@ -48,6 +48,24 @@ document.querySelectorAll('[data-review-carousel]').forEach(carousel=>{
 
 const analyticsId='G-32WC2V2WYV';
 const consentKey='duplessix-analytics-consent';
+const leadMarkerKey='duplessix-valid-form-submission';
+
+const consumeLeadMarker=()=>{
+  if(!/^\/merci(?:\.html)?\/?$/.test(location.pathname))return null;
+
+  const raw=sessionStorage.getItem(leadMarkerKey);
+  sessionStorage.removeItem(leadMarkerKey);
+  if(!raw)return null;
+
+  try{
+    const marker=JSON.parse(raw);
+    const submittedAt=Number(marker.submittedAt);
+    if(!Number.isFinite(submittedAt)||Date.now()-submittedAt>30*60*1000)return null;
+    return marker;
+  }catch{
+    return null;
+  }
+};
 
 const startAnalytics=()=>{
   if(window.duplessixAnalyticsLoaded)return;
@@ -79,8 +97,12 @@ const startAnalytics=()=>{
   script.src=`https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
   document.head.appendChild(script);
 
-  if(/^\/merci(?:\.html)?\/?$/.test(location.pathname)){
-    window.gtag('event','generate_lead');
+  const leadMarker=consumeLeadMarker();
+  if(leadMarker){
+    window.gtag('event','generate_lead',{
+      method:'contact_form',
+      service:leadMarker.service||'non_precise'
+    });
   }
 };
 
@@ -90,6 +112,17 @@ const trackAnalyticsEvent=(eventName,parameters={})=>{
   if(!window.duplessixAnalyticsLoaded||typeof window.gtag!=='function')return;
   window.gtag('event',eventName,parameters);
 };
+
+const contactForm=document.querySelector('form[name="demande-devis"]');
+if(contactForm){
+  contactForm.addEventListener('submit',()=>{
+    const service=contactForm.elements.service?.value||'';
+    sessionStorage.setItem(leadMarkerKey,JSON.stringify({
+      submittedAt:Date.now(),
+      service
+    }));
+  });
+}
 
 document.addEventListener('click',event=>{
   const link=event.target.closest('a[href]');
