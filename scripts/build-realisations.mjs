@@ -8,11 +8,11 @@ const outputDir=join(root,'dist','realisations');
 const distDir=join(root,'dist');
 
 const services={
-  'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau',file:'renovation-salle-deau.html',seoTitle:'Rénovation de salle d’eau à Guidel et Lorient | Duplessix',seoDescription:'Création ou rénovation de salle d’eau autour de Guidel : réseaux, douche, WC, vasque, étanchéité, peinture et finitions. Devis gratuit.'},
-  'enduit-peinture-placo':{label:'Enduit, peinture & placo',url:'/services/enduit-peinture-placo',file:'enduit-peinture-placo.html',seoTitle:'Peinture, enduit et placo à Guidel et Lorient | Duplessix',seoDescription:'Préparation des supports, enduit, bandes, placo et peinture intérieure à Guidel, Lorient et Quimperlé. Travaux soignés et devis gratuit.'},
-  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage à Guidel et Lorient | Duplessix',seoDescription:'Petits travaux, dépannage et réparations de logement autour de Guidel et Lorient : sanitaire, joints, fixations, équipements et remise en état.'},
-  'exterieurs':{label:'Extérieurs & menuiseries',url:'/services/exterieurs',file:'exterieurs.html',seoTitle:'Menuiseries, abris et travaux bois à Guidel | Duplessix',seoDescription:'Fabrication de volets, abris, structures bois, ponçage et lasure autour de Guidel, Lorient et Quimperlé. Découvrez les réalisations.'},
-  'maintenance-immobiliere':{label:'Maintenance immobilière',url:'/services/maintenance-immobiliere',file:'maintenance-immobiliere.html',seoTitle:'Maintenance immobilière à Guidel et Lorient | Duplessix',seoDescription:'Remise en état et réparations de logements pour propriétaires, bailleurs et agences autour de Guidel et Lorient. Suivi direct par Dorian.'}
+  'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau',file:'renovation-salle-deau.html',seoTitle:'Rénovation salle d’eau Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Création et rénovation de salle d’eau autour de Lorient et Quimperlé : réseaux, douche, WC, vasque, étanchéité, peinture et finitions.'},
+  'enduit-peinture-placo':{label:'Enduit, peinture & placo',url:'/services/enduit-peinture-placo',file:'enduit-peinture-placo.html',seoTitle:'Peinture, enduit et placo Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Préparation des supports, enduit, bandes, placo et peinture intérieure autour de Lorient et Quimperlé. Intervention directe avec Dorian.'},
+  'petits-travaux':{label:'Dépannage & petits travaux',url:'/services/petits-travaux',file:'petits-travaux.html',seoTitle:'Petits travaux et dépannage Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Dépannage, réparations et petits travaux autour de Lorient et Quimperlé : fixations, sanitaire, équipements et remise en état.'},
+  'exterieurs':{label:'Extérieurs & menuiseries',url:'/services/exterieurs',file:'exterieurs.html',seoTitle:'Travaux bois et menuiserie Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Travaux bois, fabrication de volets, abris, ponçage et lasure autour de Lorient et Quimperlé. Découvrez les réalisations publiées.'},
+  'maintenance-immobiliere':{label:'Maintenance immobilière',url:'/services/maintenance-immobiliere',file:'maintenance-immobiliere.html',seoTitle:'Maintenance immobilière Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Maintenance et remise en état de logements autour de Lorient et Quimperlé pour propriétaires, bailleurs et agences immobilières.'}
 };
 
 const serviceEvidence={
@@ -287,7 +287,10 @@ async function updateSitemap(entries){
     '/':'2026-11-03',
     '/contact':'2026-11-03',
     '/zone-intervention':'2026-11-03',
+    '/services/renovation-salle-deau':'2026-11-03',
+    '/services/enduit-peinture-placo':'2026-11-03',
     '/services/petits-travaux':'2026-11-03',
+    '/services/exterieurs':'2026-11-03',
     '/services/maintenance-immobiliere':'2026-11-03'
   };
   const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>${staticLastmod[path]||'2026-10-21'}</lastmod></url>`);
