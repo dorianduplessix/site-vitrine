@@ -282,7 +282,13 @@ async function updateSitemap(entries){
     '/services/exterieurs',
     '/services/maintenance-immobiliere'
   ];
-  const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>2026-10-21</lastmod></url>`);
+  const staticLastmod={
+    '/':'2026-11-03',
+    '/contact':'2026-11-03',
+    '/services/petits-travaux':'2026-11-03',
+    '/services/maintenance-immobiliere':'2026-11-03'
+  };
+  const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>${staticLastmod[path]||'2026-10-21'}</lastmod></url>`);
   for(const entry of entries){
     const lastmod=`<lastmod>${entry.modified||entry.date||'2026-10-21'}</lastmod>`;
     urls.push(`<url><loc>https://renovation-guidel.fr${pageUrl(entry.slug)}</loc>${lastmod}</url>`);
