@@ -322,6 +322,16 @@ async function updateSitemap(entries){
   await writeFile(join(distDir,'sitemap.xml'),sitemap,'utf8');
 }
 
+async function updateHomepagePerformance(){
+  const path=join(distDir,'index.html');
+  let html=await readFile(path,'utf8');
+  const preload='<link rel="preload" as="image" href="/assets/photos/dorian-duplessix-768.webp" imagesrcset="/assets/photos/dorian-duplessix-768.webp 768w, /assets/photos/dorian-duplessix.webp 1013w" imagesizes="(max-width: 900px) calc(100vw - 40px), 480px" fetchpriority="high">';
+  if(!html.includes('rel="preload" as="image"')){
+    html=html.replace('</head>',`${preload}</head>`);
+    await writeFile(path,html,'utf8');
+  }
+}
+
 const files=(await readdir(contentDir)).filter(file=>file.endsWith('.json'));
 const entries=[];
 for(const file of files){
@@ -343,4 +353,5 @@ for(const entry of entries){
 }
 await updateServicePages(entries);
 await updateSitemap(entries);
+await updateHomepagePerformance();
 console.log(`Réalisations générées : ${entries.length}`);
