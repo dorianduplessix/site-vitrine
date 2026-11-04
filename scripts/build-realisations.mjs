@@ -6,6 +6,7 @@ const root=join(dirname(fileURLToPath(import.meta.url)),'..');
 const contentDir=join(root,'content','realisations');
 const outputDir=join(root,'dist','realisations');
 const distDir=join(root,'dist');
+const imageMetadata=JSON.parse(await readFile(join(root,'content','image-metadata.json'),'utf8'));
 
 const services={
   'renovation-salle-deau':{label:'Rénovation de salle d’eau',url:'/services/renovation-salle-deau',file:'renovation-salle-deau.html',seoTitle:'Rénovation salle d’eau Lorient–Quimperlé | Duplessix Multi-Services',seoDescription:'Création et rénovation de salle d’eau autour de Lorient et Quimperlé : réseaux, douche, WC, vasque, étanchéité, peinture et finitions.'},
@@ -68,6 +69,15 @@ const esc=value=>String(value??'').replace(/[&<>"']/g,char=>({
 }[char]));
 
 const normalizePath=value=>String(value??'').startsWith('/')?String(value):`/${value}`;
+const responsiveImageAttributes=(value,sizes)=>{
+  const src=normalizePath(value);
+  const metadata=imageMetadata[src];
+  if(!metadata)return `src="${esc(src)}"`;
+  const dimensions=`width="${metadata.width}" height="${metadata.height}"`;
+  if(!metadata.variant)return `src="${esc(src)}" ${dimensions}`;
+  const srcset=`${esc(metadata.variant.path)} ${metadata.variant.width}w, ${esc(src)} ${metadata.width}w`;
+  return `src="${esc(src)}" srcset="${srcset}" sizes="${esc(sizes)}" ${dimensions}`;
+};
 const slugFromFile=file=>basename(file,'.json');
 const pageUrl=slug=>`/realisations/${slug}`;
 const absoluteUrl=value=>`https://renovation-guidel.fr${normalizePath(value)}`;
@@ -133,7 +143,8 @@ function serviceLinks(entry){
 function card(entry,{compact=false}={}){
   const linked=serviceLinks(entry);
   const location=entry.city?`<p class="realisation-place">${esc(entry.city)}</p>`:'';
-  return `<article class="realisation-card${compact?' compact':''}"><a href="${pageUrl(entry.slug)}"><div class="realisation-card-image"><img src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="lazy" decoding="async"></div><div class="realisation-card-copy"><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h${compact?'3':'2'}>${esc(entry.title)}</h${compact?'3':'2'}>${location}<p>${esc(entry.summary)}</p><span class="text-link">Voir le chantier →</span></div></a></article>`;
+  const sizes=compact?'(max-width: 760px) calc(100vw - 40px), 380px':'(max-width: 760px) calc(100vw - 40px), 560px';
+  return `<article class="realisation-card${compact?' compact':''}"><a href="${pageUrl(entry.slug)}"><div class="realisation-card-image"><img ${responsiveImageAttributes(entry.cover,sizes)} alt="${esc(entry.cover_alt||entry.title)}" loading="lazy" decoding="async"></div><div class="realisation-card-copy"><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h${compact?'3':'2'}>${esc(entry.title)}</h${compact?'3':'2'}>${location}<p>${esc(entry.summary)}</p><span class="text-link">Voir le chantier →</span></div></a></article>`;
 }
 
 function renderListing(entries){
@@ -178,7 +189,7 @@ function renderDetail(entry){
   const date=published?`<span>Publié le ${esc(published)}</span>`:'';
   const sections=(entry.sections||[]).map(section=>`<section class="realisation-section"><h2>${esc(section.title)}</h2>${(section.paragraphs||[]).map(paragraph=>`<p>${esc(paragraph)}</p>`).join('')}</section>`).join('');
   const steps=(entry.steps||[]).length?`<section class="realisation-section"><h2>Travaux réalisés</h2><ul>${entry.steps.map(step=>`<li>${esc(step)}</li>`).join('')}</ul></section>`:'';
-  const gallery=(entry.gallery||[]).length?`<section class="realisation-section"><h2>Photos du chantier</h2><div class="realisation-gallery">${entry.gallery.map(photo=>`<figure><img src="${esc(normalizePath(photo.image))}" alt="${esc(photo.alt||entry.title)}" loading="lazy" decoding="async">${photo.caption?`<figcaption>${esc(photo.caption)}</figcaption>`:''}</figure>`).join('')}</div></section>`:'';
+  const gallery=(entry.gallery||[]).length?`<section class="realisation-section"><h2>Photos du chantier</h2><div class="realisation-gallery">${entry.gallery.map(photo=>`<figure><img ${responsiveImageAttributes(photo.image,'(max-width: 760px) calc(100vw - 40px), 380px')} alt="${esc(photo.alt||entry.title)}" loading="lazy" decoding="async">${photo.caption?`<figcaption>${esc(photo.caption)}</figcaption>`:''}</figure>`).join('')}</div></section>`:'';
   const serviceBlock=`<section class="realisation-services"><h2>Services associés</h2><div class="realisation-service-links">${linked.map(item=>`<a class="btn secondary" href="${item.url}">${esc(item.label)}</a>`).join('')}</div></section>`;
   const seoTitle=entry.seo_title||`${entry.title}${entry.city?` à ${entry.city}`:''} | Duplessix`;
   const seoDescription=entry.seo_description||`${entry.summary}${entry.city?` Chantier réalisé à ${entry.city}.`:''}`;
@@ -207,7 +218,7 @@ function renderDetail(entry){
   ${header()}
   <main id="contenu">
     <section class="page-hero realisation-hero"><div class="wrap"><div class="breadcrumbs"><a href="/">Accueil</a> / <a href="/realisations">Réalisations</a> / ${esc(entry.title)}</div><p class="eyebrow">${esc(linked.map(item=>item.label).join(' · '))}</p><h1>${esc(entry.title)}</h1><p class="lead">${esc(entry.summary)}</p><div class="realisation-meta">${location}${date}</div></div></section>
-    <div class="page-layout wrap"><article class="page-copy realisation-detail"><img class="feature-image realisation-cover" src="${esc(normalizePath(entry.cover))}" alt="${esc(entry.cover_alt||entry.title)}" loading="eager" decoding="async">${sections}${steps}${gallery}${serviceBlock}</article><aside class="aside"><h3>Un projet similaire ?</h3><p>Expliquez votre besoin et joignez vos photos après le premier échange.</p><a class="btn" href="/contact">Demander un devis</a><a class="btn secondary" href="/realisations">Toutes les réalisations</a></aside></div>
+    <div class="page-layout wrap"><article class="page-copy realisation-detail"><img class="feature-image realisation-cover" ${responsiveImageAttributes(entry.cover,'(max-width: 900px) calc(100vw - 40px), 760px')} alt="${esc(entry.cover_alt||entry.title)}" loading="eager" decoding="async">${sections}${steps}${gallery}${serviceBlock}</article><aside class="aside"><h3>Un projet similaire ?</h3><p>Expliquez votre besoin et joignez vos photos après le premier échange.</p><a class="btn" href="/contact">Demander un devis</a><a class="btn secondary" href="/realisations">Toutes les réalisations</a></aside></div>
   </main>
   ${footer()}
 </body>

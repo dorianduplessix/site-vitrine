@@ -1,0 +1,335 @@
+{
+  "/assets/photos/atelier-osb-interieur.webp": {
+    "width": 1672,
+    "height": 941,
+    "variant": {
+      "path": "/assets/photos/atelier-osb-interieur-768.webp",
+      "width": 768,
+      "height": 432
+    }
+  },
+  "/assets/photos/cabanon-avant-apres.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variant": {
+      "path": "/assets/photos/cabanon-avant-apres-768.webp",
+      "width": 768,
+      "height": 1152
+    }
+  },
+  "/assets/photos/carport.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variant": {
+      "path": "/assets/photos/carport-768.webp",
+      "width": 768,
+      "height": 576
+    }
+  },
+  "/assets/photos/charpente-ossature-interieure.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/charpente-ossature-interieure-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/enduit-avant-apres-vertical.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variant": {
+      "path": "/assets/photos/enduit-avant-apres-vertical-768.webp",
+      "width": 768,
+      "height": 1152
+    }
+  },
+  "/assets/photos/grange-etat-initial.webp": {
+    "width": 1672,
+    "height": 941,
+    "variant": {
+      "path": "/assets/photos/grange-etat-initial-768.webp",
+      "width": 768,
+      "height": 432
+    }
+  },
+  "/assets/photos/ossature-bois-grange.webp": {
+    "width": 1672,
+    "height": 941,
+    "variant": {
+      "path": "/assets/photos/ossature-bois-grange-768.webp",
+      "width": 768,
+      "height": 432
+    }
+  },
+  "/assets/photos/ossature-bois-panneaux-osb.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/ossature-bois-panneaux-osb-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/peinture-chantier-mur-terracotta.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variant": {
+      "path": "/assets/photos/peinture-chantier-mur-terracotta-768.webp",
+      "width": 768,
+      "height": 576
+    }
+  },
+  "/assets/photos/peinture-chantier-mur-vert.webp": {
+    "width": 1448,
+    "height": 1086,
+    "variant": {
+      "path": "/assets/photos/peinture-chantier-mur-vert-768.webp",
+      "width": 768,
+      "height": 576
+    }
+  },
+  "/assets/photos/portes-bois-posees.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/portes-bois-posees-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/radiateur-arrache-01-avant.webp": {
+    "width": 1086,
+    "height": 1448,
+    "variant": {
+      "path": "/assets/photos/radiateur-arrache-01-avant-768.webp",
+      "width": 768,
+      "height": 1024
+    }
+  },
+  "/assets/photos/radiateur-arrache-02-rebouchage.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variant": {
+      "path": "/assets/photos/radiateur-arrache-02-rebouchage-768.webp",
+      "width": 768,
+      "height": 1152
+    }
+  },
+  "/assets/photos/radiateur-arrache-03-remise-en-place.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variant": {
+      "path": "/assets/photos/radiateur-arrache-03-remise-en-place-768.webp",
+      "width": 768,
+      "height": 1152
+    }
+  },
+  "/assets/photos/remplacement-carreau-01-vitrage-casse.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-carreau-01-vitrage-casse-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-carreau-02-vitrage-casse.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-carreau-02-vitrage-casse-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-carreau-03-apres.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-carreau-03-apres-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-carreau-04-detail-mastic.webp": {
+    "width": 1869,
+    "height": 842,
+    "variant": {
+      "path": "/assets/photos/remplacement-carreau-04-detail-mastic-768.webp",
+      "width": 768,
+      "height": 346
+    }
+  },
+  "/assets/photos/remplacement-hotte-01-avant.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-hotte-01-avant-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-hotte-02-depose.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-hotte-02-depose-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-hotte-03-apres.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/remplacement-hotte-03-apres-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/remplacement-toiture-01-avant-detail.webp": {
+    "width": 1024,
+    "height": 1536,
+    "variant": {
+      "path": "/assets/photos/remplacement-toiture-01-avant-detail-768.webp",
+      "width": 768,
+      "height": 1152
+    }
+  },
+  "/assets/photos/remplacement-toiture-02-avant-ensemble.webp": {
+    "width": 842,
+    "height": 1869,
+    "variant": {
+      "path": "/assets/photos/remplacement-toiture-02-avant-ensemble-768.webp",
+      "width": 768,
+      "height": 1705
+    }
+  },
+  "/assets/photos/remplacement-toiture-03-sous-face.webp": {
+    "width": 842,
+    "height": 1869,
+    "variant": {
+      "path": "/assets/photos/remplacement-toiture-03-sous-face-768.webp",
+      "width": 768,
+      "height": 1705
+    }
+  },
+  "/assets/photos/remplacement-toiture-04-apres-ensemble.webp": {
+    "width": 1869,
+    "height": 842,
+    "variant": {
+      "path": "/assets/photos/remplacement-toiture-04-apres-ensemble-768.webp",
+      "width": 768,
+      "height": 346
+    }
+  },
+  "/assets/photos/remplacement-toiture-05-apres-detail.webp": {
+    "width": 1869,
+    "height": 842,
+    "variant": {
+      "path": "/assets/photos/remplacement-toiture-05-apres-detail-768.webp",
+      "width": 768,
+      "height": 346
+    }
+  },
+  "/assets/photos/salle-eau-carrelage.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/salle-eau-carrelage-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/salle-eau-douche-terminee.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/salle-eau-douche-terminee-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/salle-eau-etancheite.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/salle-eau-etancheite-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/salle-eau-meuble-vasque.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/salle-eau-meuble-vasque-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/salle-eau-plaques-platre.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/salle-eau-plaques-platre-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/salle-eau.webp": {
+    "width": 1254,
+    "height": 1254,
+    "variant": {
+      "path": "/assets/photos/salle-eau-768.webp",
+      "width": 768,
+      "height": 768
+    }
+  },
+  "/assets/photos/volet-avant-apres-horizontal.webp": {
+    "width": 1360,
+    "height": 1156,
+    "variant": {
+      "path": "/assets/photos/volet-avant-apres-horizontal-768.webp",
+      "width": 768,
+      "height": 653
+    }
+  },
+  "/assets/photos/volets-assemblage.webp": {
+    "width": 1672,
+    "height": 941,
+    "variant": {
+      "path": "/assets/photos/volets-assemblage-768.webp",
+      "width": 768,
+      "height": 432
+    }
+  },
+  "/assets/photos/volets-bois-brut.webp": {
+    "width": 1672,
+    "height": 941,
+    "variant": {
+      "path": "/assets/photos/volets-bois-brut-768.webp",
+      "width": 768,
+      "height": 432
+    }
+  },
+  "/assets/photos/volets-finis-atelier.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/volets-finis-atelier-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  },
+  "/assets/photos/volets-sous-couche-exterieur.webp": {
+    "width": 1122,
+    "height": 1402,
+    "variant": {
+      "path": "/assets/photos/volets-sous-couche-exterieur-768.webp",
+      "width": 768,
+      "height": 960
+    }
+  }
+}
