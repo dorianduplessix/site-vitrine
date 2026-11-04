@@ -221,6 +221,10 @@ function serviceSection(entries,key){
   return `<section class="service-realizations"><h2>Ce que montrent les chantiers réalisés</h2>${proof}<div class="service-realisation-grid">${entries.map(entry=>card(entry,{compact:true})).join('')}</div><a class="text-link service-realisation-all" href="/realisations">Voir toutes les réalisations →</a></section>`;
 }
 
+function serviceAreaSection(){
+  return `<section class="service-area"><h2>Secteur d’intervention autour de Lorient et Quimperlé</h2><p>Installé à Guidel, Dorian intervient habituellement dans un rayon d’environ 30 kilomètres autour de Lorient et Quimperlé. La faisabilité du déplacement dépend de la nature et du volume des travaux. <a class="text-link" href="/zone-intervention">Consulter les communes couvertes</a>.</p></section>`;
+}
+
 async function updateServicePages(entries){
   for(const [key,service] of Object.entries(services)){
     const path=join(distDir,'services',service.file);
@@ -263,6 +267,11 @@ async function updateServicePages(entries){
     html=seoPattern.test(html)?html.replace(seoPattern,seoBlock):html.replace('</head>',`${seoBlock}</head>`);
     const start='<!-- REALISATIONS_LIEES_DEBUT -->';
     const end='<!-- REALISATIONS_LIEES_FIN -->';
+    const areaStart='<!-- SERVICE_AREA_DEBUT -->';
+    const areaEnd='<!-- SERVICE_AREA_FIN -->';
+    const areaBlock=`${areaStart}${serviceAreaSection()}${areaEnd}`;
+    const areaPattern=new RegExp(`${areaStart}[\\s\\S]*?${areaEnd}`);
+    html=areaPattern.test(html)?html.replace(areaPattern,areaBlock):html.replace(start,`${areaBlock}${start}`);
     const block=`${start}${serviceSection(entries.filter(entry=>entry.services.includes(key)),key)}${end}`;
     const pattern=new RegExp(`${start}[\\s\\S]*?${end}`);
     html=pattern.test(html)?html.replace(pattern,block):html.replace('</article>',`${block}</article>`);
@@ -287,11 +296,11 @@ async function updateSitemap(entries){
     '/':'2026-11-03',
     '/contact':'2026-11-03',
     '/zone-intervention':'2026-11-03',
-    '/services/renovation-salle-deau':'2026-11-03',
-    '/services/enduit-peinture-placo':'2026-11-03',
-    '/services/petits-travaux':'2026-11-03',
-    '/services/exterieurs':'2026-11-03',
-    '/services/maintenance-immobiliere':'2026-11-03'
+    '/services/renovation-salle-deau':'2026-11-04',
+    '/services/enduit-peinture-placo':'2026-11-04',
+    '/services/petits-travaux':'2026-11-04',
+    '/services/exterieurs':'2026-11-04',
+    '/services/maintenance-immobiliere':'2026-11-04'
   };
   const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>${staticLastmod[path]||'2026-10-21'}</lastmod></url>`);
   for(const entry of entries){
