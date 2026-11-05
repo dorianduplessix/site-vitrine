@@ -343,7 +343,7 @@ async function updateSharedAssetVersions(directory=distDir){
     let html=await readFile(path,'utf8');
     const updated=html
       .replace(/\/assets\/styles\.css\?v=[^"]+/g,'/assets/styles.css?v=mobile-cta-1')
-      .replace(/\/assets\/site\.js\?v=[^"]+/g,'/assets/site.js?v=mobile-cta-1');
+      .replace(/\/assets\/site\.js\?v=[^"]+/g,'/assets/site.js?v=mobile-cta-analytics-1');
     if(updated!==html)await writeFile(path,updated,'utf8');
   }
 }

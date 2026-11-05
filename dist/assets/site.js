@@ -132,7 +132,8 @@ document.addEventListener('click',event=>{
   const eventDetails={
     link_url:link.href,
     link_text:link.textContent.trim().replace(/\s+/g,' ').slice(0,100),
-    page_path:location.pathname
+    page_path:location.pathname,
+    placement:link.closest('.mobile-contact-bar')?'mobile_sticky_bar':'page_content'
   };
 
   if(href.startsWith('tel:')){
@@ -145,7 +146,7 @@ document.addEventListener('click',event=>{
     return;
   }
 
-  if(link.matches('a.btn[href="/contact"],a.btn[href$="/contact"]')){
+  if(link.matches('a.btn[href="/contact"],a.btn[href$="/contact"],.mobile-contact-bar__quote')){
     trackAnalyticsEvent('quote_request_click',eventDetails);
     return;
   }
