@@ -157,12 +157,14 @@ document.addEventListener('click',event=>{
 
 const saveConsent=value=>{
   localStorage.setItem(consentKey,value);
+  document.body.classList.remove('has-cookie-banner');
   closeConsentBanner();
   if(value==='granted')startAnalytics();
 };
 
 const showConsentBanner=()=>{
   if(document.querySelector('.cookie-banner'))return;
+  document.body.classList.add('has-cookie-banner');
   const banner=document.createElement('section');
   banner.className='cookie-banner';
   banner.setAttribute('role','dialog');
@@ -172,6 +174,16 @@ const showConsentBanner=()=>{
     button.addEventListener('click',()=>saveConsent(button.dataset.consent));
   });
   document.body.appendChild(banner);
+};
+
+const addMobileContactBar=()=>{
+  if(/^\/(?:contact|merci)(?:\.html)?\/?$/.test(location.pathname))return;
+  const bar=document.createElement('nav');
+  bar.className='mobile-contact-bar';
+  bar.setAttribute('aria-label','Contact rapide');
+  bar.innerHTML='<a class="mobile-contact-bar__call" href="tel:+33659735020">Appeler</a><a class="mobile-contact-bar__quote" href="/contact">Demander un devis</a>';
+  document.body.appendChild(bar);
+  document.body.classList.add('has-mobile-contact-bar');
 };
 
 const addConsentSettingsLink=()=>{
@@ -189,6 +201,7 @@ const addConsentSettingsLink=()=>{
   footerLinks.appendChild(button);
 };
 
+addMobileContactBar();
 addConsentSettingsLink();
 const storedConsent=localStorage.getItem(consentKey);
 if(storedConsent==='granted')startAnalytics();

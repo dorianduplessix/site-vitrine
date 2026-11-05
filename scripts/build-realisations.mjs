@@ -332,6 +332,22 @@ async function updateHomepagePerformance(){
   }
 }
 
+async function updateSharedAssetVersions(directory=distDir){
+  for(const item of await readdir(directory,{withFileTypes:true})){
+    const path=join(directory,item.name);
+    if(item.isDirectory()){
+      await updateSharedAssetVersions(path);
+      continue;
+    }
+    if(!item.name.endsWith('.html'))continue;
+    let html=await readFile(path,'utf8');
+    const updated=html
+      .replace(/\/assets\/styles\.css\?v=[^"]+/g,'/assets/styles.css?v=mobile-cta-1')
+      .replace(/\/assets\/site\.js\?v=[^"]+/g,'/assets/site.js?v=mobile-cta-1');
+    if(updated!==html)await writeFile(path,updated,'utf8');
+  }
+}
+
 const files=(await readdir(contentDir)).filter(file=>file.endsWith('.json'));
 const entries=[];
 for(const file of files){
@@ -354,4 +370,5 @@ for(const entry of entries){
 await updateServicePages(entries);
 await updateSitemap(entries);
 await updateHomepagePerformance();
+await updateSharedAssetVersions();
 console.log(`Réalisations générées : ${entries.length}`);
