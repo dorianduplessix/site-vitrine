@@ -102,7 +102,7 @@ function header(){
 }
 
 function footer(){
-  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/zone-intervention">Zone d’intervention</a><a href="/mentions">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-4"></script>`;
+  return `<footer class="footer footer-compact"><div class="footer-bottom wrap"><span>© 2026 Duplessix Multi-Services</span><div class="footer-links"><a href="/zone-intervention">Zone d’intervention</a><a href="/plan-du-site">Plan du site</a><a href="/mentions">Mentions légales</a><a href="tel:+33659735020">06 59 73 50 20</a><a href="mailto:contact@renovation-guidel.fr">contact@renovation-guidel.fr</a></div></div></footer><script src="/assets/site.js?v=ga4-leads-4"></script>`;
 }
 
 function head({title,description,canonical,image,type='website',structuredData=[]}){
@@ -297,6 +297,7 @@ async function updateSitemap(entries){
     '/realisations',
     '/contact',
     '/zone-intervention',
+    '/plan-du-site',
     '/services/renovation-salle-deau',
     '/services/enduit-peinture-placo',
     '/services/petits-travaux',
@@ -304,9 +305,10 @@ async function updateSitemap(entries){
     '/services/maintenance-immobiliere'
   ];
   const staticLastmod={
-    '/':'2026-11-03',
+    '/':'2026-11-16',
     '/contact':'2026-11-03',
     '/zone-intervention':'2026-11-03',
+    '/plan-du-site':'2026-11-16',
     '/services/renovation-salle-deau':'2026-11-04',
     '/services/enduit-peinture-placo':'2026-11-04',
     '/services/petits-travaux':'2026-11-04',
