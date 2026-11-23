@@ -20,6 +20,24 @@
   status = 301
   force = true
 
+[[redirects]]
+  from = "/realisations/remplacement-vitrages-anciens-nantes.html"
+  to = "/realisations/remplacement-vitrages-anciens-nantes"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/realisations/remise-en-place-radiateur-arrache.html"
+  to = "/realisations/remise-en-place-radiateur-arrache"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/realisations/correction-fuite-toiture-bac-acier-guidel.html"
+  to = "/realisations/correction-fuite-toiture-bac-acier-guidel"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]

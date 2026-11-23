@@ -120,7 +120,7 @@ function head({title,description,canonical,image,type='website',structuredData=[
   <meta name="description" content="${esc(description)}">
   <link rel="canonical" href="${absolute}">
   <link rel="icon" href="/favicon.png" type="image/png">
-  <link rel="stylesheet" href="/assets/styles.css?v=realisations-communes-1">
+  <link rel="stylesheet" href="/assets/styles.css?v=audit-1">
   <meta name="theme-color" content="#102a34">
   <meta property="og:type" content="${type}">
   <meta property="og:locale" content="fr_FR">
@@ -240,7 +240,7 @@ async function updateServicePages(entries){
   for(const [key,service] of Object.entries(services)){
     const path=join(distDir,'services',service.file);
     let html=await readFile(path,'utf8');
-    html=html.replace(/\/assets\/styles\.css\?v=[^"]+/,'/assets/styles.css?v=services-evidence-1');
+    html=html.replace(/\/assets\/styles\.css\?v=[^"]+/,'/assets/styles.css?v=audit-1');
     html=html.replace(/<title>[\s\S]*?<\/title>/,`<title>${esc(service.seoTitle)}</title>`);
     html=html.replace(/<meta name="description" content="[^"]*">/,`<meta name="description" content="${esc(service.seoDescription)}">`);
     html=html.replace(/<meta property="og:title" content="[^"]*">/,`<meta property="og:title" content="${esc(service.seoTitle)}">`);
@@ -306,14 +306,15 @@ async function updateSitemap(entries){
   ];
   const staticLastmod={
     '/':'2026-11-16',
-    '/contact':'2026-11-03',
+    '/realisations':'2026-11-16',
+    '/contact':'2026-11-23',
     '/zone-intervention':'2026-11-03',
     '/plan-du-site':'2026-11-16',
-    '/services/renovation-salle-deau':'2026-11-04',
-    '/services/enduit-peinture-placo':'2026-11-04',
-    '/services/petits-travaux':'2026-11-04',
-    '/services/exterieurs':'2026-11-04',
-    '/services/maintenance-immobiliere':'2026-11-04'
+    '/services/renovation-salle-deau':'2026-11-18',
+    '/services/enduit-peinture-placo':'2026-11-18',
+    '/services/petits-travaux':'2026-11-18',
+    '/services/exterieurs':'2026-11-18',
+    '/services/maintenance-immobiliere':'2026-11-18'
   };
   const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>${staticLastmod[path]||'2026-10-21'}</lastmod></url>`);
   for(const entry of entries){
@@ -344,7 +345,7 @@ async function updateSharedAssetVersions(directory=distDir){
     if(!item.name.endsWith('.html'))continue;
     let html=await readFile(path,'utf8');
     const updated=html
-      .replace(/\/assets\/styles\.css\?v=[^"]+/g,'/assets/styles.css?v=mobile-cta-1')
+      .replace(/\/assets\/styles\.css\?v=[^"]+/g,'/assets/styles.css?v=audit-1')
       .replace(/\/assets\/site\.js\?v=[^"]+/g,'/assets/site.js?v=mobile-cta-analytics-1');
     if(updated!==html)await writeFile(path,updated,'utf8');
   }
