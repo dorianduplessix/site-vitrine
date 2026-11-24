@@ -1,0 +1,66 @@
+{
+  "title": "Application d’un enduit à la chaux sur un mur en pierre",
+  "date": "2026-11-24",
+  "published": true,
+  "city": "",
+  "seo_title": "Enduit à la chaux sur mur en pierre | Duplessix Multi-Services",
+  "seo_description": "Rénovation d’un mur en pierre par application d’un enduit à la chaux en plusieurs couches, avec une finition rustique et nuancée.",
+  "services": ["enduit-peinture-placo"],
+  "summary": "Recouvrement d’un mur en pierre irrégulier par un enduit à la chaux appliqué en plusieurs passes, avec une finition rustique adaptée au caractère ancien de la pièce.",
+  "cover": "/assets/photos/renovation-mur-ancien-04-apres-enduit-decoratif.webp",
+  "cover_alt": "Mur ancien terminé avec un enduit à la chaux de finition rustique",
+  "sections": [
+    {
+      "title": "Uniformiser un mur en pierre très irrégulier",
+      "paragraphs": [
+        "Le mur en pierre présentait un aspect très hétérogène qui ne correspondait pas au rendu recherché dans la pièce. L’objectif était de recouvrir la maçonnerie tout en conservant une finition cohérente avec les poutres apparentes et les boiseries anciennes.",
+        "Le support a été préparé avant l’application de l’enduit afin de traiter les fortes irrégularités de la pierre et d’obtenir une base suffisamment homogène."
+      ]
+    },
+    {
+      "title": "Un enduit à la chaux réalisé en plusieurs passes",
+      "paragraphs": [
+        "Une première couche de dressage a permis de reprendre les creux et de régulariser progressivement le support sans chercher à obtenir une surface parfaitement plane.",
+        "Les couches suivantes ont apporté l’épaisseur et l’aspect final. La couche de finition, légèrement nuancée, a été travaillée pour conserver un relief volontairement rustique plutôt qu’un rendu lisse et contemporain."
+      ]
+    },
+    {
+      "title": "Une finition adaptée au bâti ancien",
+      "paragraphs": [
+        "L’enduit à la chaux permet d’obtenir une finition minérale qui s’intègre naturellement dans une pièce ancienne. Le résultat masque la maçonnerie jugée inesthétique tout en conservant un aspect vivant et irrégulier.",
+        "Les raccords ont été soignés au contact des poutres, des encadrements et du soubassement en bois afin de préserver les éléments existants."
+      ]
+    }
+  ],
+  "steps": [
+    "Protection des boiseries, des encadrements et des éléments conservés",
+    "Préparation et contrôle du mur en pierre",
+    "Application d’une première couche de dressage pour reprendre les irrégularités",
+    "Application des couches intermédiaires nécessaires à la mise en forme du support",
+    "Réalisation de la couche de finition à la chaux",
+    "Travail de la matière pour obtenir un aspect rustique et nuancé",
+    "Raccords et finitions au droit des poutres et des boiseries"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/renovation-mur-ancien-01-mise-a-nu.webp",
+      "alt": "Mur en pierre irrégulier avant la réalisation de l’enduit à la chaux",
+      "caption": "État initial du mur en pierre avant recouvrement."
+    },
+    {
+      "image": "/assets/photos/renovation-mur-ancien-02-reprise-enduit.webp",
+      "alt": "Première couche d’enduit appliquée sur le mur en pierre",
+      "caption": "Couche de dressage destinée à reprendre les irrégularités du support."
+    },
+    {
+      "image": "/assets/photos/renovation-mur-ancien-03-finition-enduit.webp",
+      "alt": "Application progressive de la couche de finition à la chaux",
+      "caption": "Application de la finition à la chaux sur les couches préparatoires."
+    },
+    {
+      "image": "/assets/photos/renovation-mur-ancien-04-apres-enduit-decoratif.webp",
+      "alt": "Mur terminé avec un enduit à la chaux de style rustique",
+      "caption": "Résultat final : une finition minérale, rustique et légèrement nuancée."
+    }
+  ]
+}

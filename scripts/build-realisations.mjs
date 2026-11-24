@@ -28,11 +28,12 @@ const serviceEvidence={
     ]
   },
   'enduit-peinture-placo':{
-    intro:'Les réalisations de Lorient et Quimperlé illustrent aussi bien la mise en peinture d’un appartement complet que la reprise d’un support très dégradé.',
+    intro:'Les réalisations publiées illustrent la mise en peinture d’un appartement, la reprise d’un support très dégradé et la rénovation d’un mur ancien avec un enduit à la chaux.',
     points:[
       'Préparation des murs et des plafonds avant mise en peinture',
       'Application d’une couche d’apprêt puis de deux couches de peinture',
       'Grattage, reprise d’enduit, ponçage et contrôle d’un mur ancien',
+      'Application d’un enduit à la chaux en plusieurs couches avec finition rustique',
       'Finitions propres dans plusieurs pièces et avec différentes teintes'
     ]
   },
@@ -312,7 +313,7 @@ async function updateSitemap(entries){
     '/zone-intervention':'2026-11-03',
     '/plan-du-site':'2026-11-16',
     '/services/renovation-salle-deau':'2026-11-24',
-    '/services/enduit-peinture-placo':'2026-11-18',
+    '/services/enduit-peinture-placo':'2026-11-24',
     '/services/petits-travaux':'2026-11-18',
     '/services/exterieurs':'2026-11-18',
     '/services/maintenance-immobiliere':'2026-11-18'
