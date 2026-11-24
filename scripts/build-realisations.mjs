@@ -18,10 +18,11 @@ const services={
 
 const serviceEvidence={
   'renovation-salle-deau':{
-    intro:'Les chantiers publiés à Lorient et Caudan montrent deux niveaux d’intervention : la création complète d’une salle d’eau et la rénovation d’une pièce existante.',
+    intro:'Les chantiers publiés montrent plusieurs niveaux d’intervention : création complète, rénovation d’une pièce existante et remplacement d’une baignoire par une douche.',
     points:[
       'Création des évacuations d’eaux usées et des alimentations EFS et ECS',
-      'Pose et préparation des plaques de plâtre hydrofuges, étanchéité et peinture',
+      'Dépose d’une baignoire, adaptation des réseaux et création d’un coffrage technique',
+      'Pose et préparation des plaques de plâtre hydrofuges, étanchéité et revêtement mural',
       'Installation de la douche, du WC, du meuble vasque et des équipements',
       'Coordination avec un artisan partenaire lorsque le carrelage lui est confié'
     ]
@@ -306,11 +307,11 @@ async function updateSitemap(entries){
   ];
   const staticLastmod={
     '/':'2026-11-16',
-    '/realisations':'2026-11-16',
+    '/realisations':'2026-11-24',
     '/contact':'2026-11-23',
     '/zone-intervention':'2026-11-03',
     '/plan-du-site':'2026-11-16',
-    '/services/renovation-salle-deau':'2026-11-18',
+    '/services/renovation-salle-deau':'2026-11-24',
     '/services/enduit-peinture-placo':'2026-11-18',
     '/services/petits-travaux':'2026-11-18',
     '/services/exterieurs':'2026-11-18',

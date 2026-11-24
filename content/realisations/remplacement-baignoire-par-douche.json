@@ -1,0 +1,83 @@
+{
+  "title": "Remplacement d’une baignoire par une douche",
+  "date": "2026-11-24",
+  "published": true,
+  "city": "Lorient",
+  "seo_title": "Remplacement d’une baignoire par une douche à Lorient | Duplessix",
+  "seo_description": "À Lorient, transformation d’une baignoire en douche : réseaux, coffrage, étanchéité, revêtement mural, receveur et paroi vitrée.",
+  "services": ["renovation-salle-deau"],
+  "summary": "Dépose d’une baignoire et création d’un espace douche avec adaptation des réseaux, coffrage technique, étanchéité, revêtement mural, receveur et paroi vitrée.",
+  "cover": "/assets/photos/renovation-salle-eau-05-apres-ensemble.webp",
+  "cover_alt": "Douche terminée avec receveur, paroi vitrée, revêtement mural et robinetterie",
+  "sections": [
+    {
+      "title": "Transformer l’emplacement de la baignoire",
+      "paragraphs": [
+        "Le projet consistait à déposer la baignoire existante afin de créer une douche plus accessible, tout en conservant le carrelage de sol en place dans le reste de la salle d’eau.",
+        "Après la dépose, les réseaux apparents ont été repris. Les canalisations d’évacuation et de chauffage ont été intégrées dans un coffrage en plaques de plâtre hydrofuges afin de retrouver des supports réguliers et de préparer la nouvelle zone de douche."
+      ]
+    },
+    {
+      "title": "Préparation et étanchéité de la zone de douche",
+      "paragraphs": [
+        "Le coffrage et les parois ont reçu un traitement d’étanchéité avant la pose du revêtement mural. Cette étape, indispensable dans une zone directement exposée à l’eau, n’apparaît pas sur les photographies du chantier.",
+        "Le revêtement mural a ensuite été posé, avec intégration de la platine de douche et préparation des raccordements de la robinetterie."
+      ]
+    },
+    {
+      "title": "Pose du receveur et finitions",
+      "paragraphs": [
+        "Un ragréage a été réalisé à l’ancien emplacement de la baignoire pour rattraper le niveau du carrelage existant et obtenir une base adaptée à la pose du receveur.",
+        "Le chantier s’est poursuivi par la pose du receveur, de la paroi vitrée, de la robinetterie et des joints d’étanchéité. La finition du sol autour de la nouvelle douche n’était pas comprise dans la prestation et restait à la charge du client."
+      ]
+    }
+  ],
+  "steps": [
+    "Dépose et évacuation de la baignoire existante",
+    "Reprise des évacuations et des canalisations de chauffage",
+    "Création d’un coffrage technique en plaques de plâtre hydrofuges",
+    "Réalisation de l’étanchéité des supports dans la zone de douche",
+    "Pose du revêtement mural et intégration de la platine de douche",
+    "Ragréage de l’ancien emplacement de la baignoire au niveau du carrelage existant",
+    "Pose et raccordement du receveur de douche",
+    "Installation de la paroi vitrée et de la robinetterie",
+    "Réalisation des joints et finitions de la zone de douche"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/renovation-salle-eau-01-avant.webp",
+      "alt": "Baignoire existante avant sa dépose",
+      "caption": "État initial de la baignoire avant transformation de la zone."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-02-depose-plomberie.webp",
+      "alt": "Emplacement de la baignoire après dépose avec réseaux apparents",
+      "caption": "Dépose de la baignoire et mise à nu des évacuations et canalisations existantes."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-03-preparation-cloisons.webp",
+      "alt": "Coffrages en plaques de plâtre hydrofuges préparés dans la future douche",
+      "caption": "Intégration des réseaux dans les coffrages et préparation des supports."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-04-pose-carrelage.webp",
+      "alt": "Revêtement mural posé dans la future zone de douche",
+      "caption": "Pose du revêtement mural et préparation de l’emplacement du receveur."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-05-apres-ensemble.webp",
+      "alt": "Vue d’ensemble de la douche terminée avec paroi vitrée",
+      "caption": "Receveur, paroi vitrée et robinetterie installés. La finition du sol reste à la charge du client."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-06-apres-douche.webp",
+      "alt": "Douche terminée avec revêtement mural et colonne de douche",
+      "caption": "Vue intérieure de la douche après raccordement de la robinetterie."
+    },
+    {
+      "image": "/assets/photos/renovation-salle-eau-07-apres-finitions.webp",
+      "alt": "Receveur de douche terminé avec joints périphériques",
+      "caption": "Receveur posé et finitions d’étanchéité réalisées."
+    }
+  ]
+}

@@ -331,5 +331,33 @@
       "width": 768,
       "height": 960
     }
+  },
+  "/assets/photos/renovation-salle-eau-01-avant.webp": {
+    "width": 941,
+    "height": 1672
+  },
+  "/assets/photos/renovation-salle-eau-02-depose-plomberie.webp": {
+    "width": 1086,
+    "height": 1448
+  },
+  "/assets/photos/renovation-salle-eau-03-preparation-cloisons.webp": {
+    "width": 1086,
+    "height": 1448
+  },
+  "/assets/photos/renovation-salle-eau-04-pose-carrelage.webp": {
+    "width": 1024,
+    "height": 1536
+  },
+  "/assets/photos/renovation-salle-eau-05-apres-ensemble.webp": {
+    "width": 887,
+    "height": 1774
+  },
+  "/assets/photos/renovation-salle-eau-06-apres-douche.webp": {
+    "width": 860,
+    "height": 1828
+  },
+  "/assets/photos/renovation-salle-eau-07-apres-finitions.webp": {
+    "width": 887,
+    "height": 1774
   }
 }
