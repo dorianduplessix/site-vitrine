@@ -55,11 +55,12 @@ const serviceEvidence={
     ]
   },
   'exterieurs':{
-    intro:'Les chantiers publiés montrent des interventions de construction, de fabrication et de remise en état du bois, ainsi que la réparation ponctuelle de fenêtres anciennes.',
+    intro:'Les chantiers publiés montrent des interventions de construction, de fabrication, de consolidation et de remise en état du bois, ainsi que la réparation ponctuelle de fenêtres anciennes.',
     points:[
       'Construction d’un abri pour bois avec couverture en bac acier imitation tuiles',
       'Création d’un local de stockage en ossature bois et panneaux OSB',
       'Ponçage complet et application d’une lasure sur un cabanon',
+      'Consolidation, décapage et remise en protection d’un garde-corps en bois',
       'Fabrication de volets en bois exotique reproduits à l’identique',
       'Remplacement de carreaux simples sur des fenêtres anciennes avec pose au mastic'
     ]
@@ -308,14 +309,14 @@ async function updateSitemap(entries){
   ];
   const staticLastmod={
     '/':'2026-11-16',
-    '/realisations':'2026-11-24',
+    '/realisations':'2026-11-25',
     '/contact':'2026-11-23',
     '/zone-intervention':'2026-11-03',
     '/plan-du-site':'2026-11-16',
     '/services/renovation-salle-deau':'2026-11-24',
     '/services/enduit-peinture-placo':'2026-11-24',
     '/services/petits-travaux':'2026-11-18',
-    '/services/exterieurs':'2026-11-18',
+    '/services/exterieurs':'2026-11-25',
     '/services/maintenance-immobiliere':'2026-11-18'
   };
   const urls=staticPaths.map(path=>`<url><loc>https://renovation-guidel.fr${path}</loc><lastmod>${staticLastmod[path]||'2026-10-21'}</lastmod></url>`);

@@ -1,0 +1,66 @@
+{
+  "title": "Rénovation et consolidation d’un garde-corps en bois",
+  "date": "2026-11-25",
+  "published": true,
+  "city": "Guidel",
+  "seo_title": "Rénovation d’un garde-corps en bois à Guidel | Duplessix",
+  "seo_description": "À Guidel, rénovation d’un garde-corps en bois : consolidation des fixations, décapage complet, remplacement des parcloses et nouvelle lasure.",
+  "services": ["exterieurs"],
+  "summary": "Remise en état d’un garde-corps extérieur en bois vieillissant, avec consolidation de la partie basse, décapage complet, remplacement des parcloses et application d’une nouvelle lasure.",
+  "cover": "/assets/photos/renovation-garde-corps-bois-04-apres-ensemble.webp",
+  "cover_alt": "Garde-corps en bois rénové et protégé par une nouvelle lasure",
+  "sections": [
+    {
+      "title": "Sécuriser un garde-corps en bois vieillissant",
+      "paragraphs": [
+        "Le garde-corps présentait un vieillissement généralisé du bois et de sa protection de surface. Avant les travaux de finition, sa tenue a été contrôlée afin de repérer les points nécessitant une reprise.",
+        "Des fixations complémentaires ont été ajoutées en partie basse pour renforcer l’assemblage et améliorer la stabilité de l’ouvrage existant."
+      ]
+    },
+    {
+      "title": "Décapage complet et reprise des éléments dégradés",
+      "paragraphs": [
+        "L’ancienne finition a été entièrement retirée afin de revenir à un support propre et d’éliminer les parties qui n’adhéraient plus correctement.",
+        "Les parcloses vieillissantes ont été remplacées avant la préparation finale du bois. Cette reprise permet de retrouver des assemblages plus propres et un support cohérent avant l’application de la protection."
+      ]
+    },
+    {
+      "title": "Une nouvelle protection par lasure",
+      "paragraphs": [
+        "Après dépoussiérage et préparation du support, une nouvelle lasure a été appliquée pour protéger le bois contre les intempéries et les variations d’humidité.",
+        "La finition redonne un aspect homogène au garde-corps tout en laissant visible le veinage du bois."
+      ]
+    }
+  ],
+  "steps": [
+    "Contrôle de l’état général et des assemblages du garde-corps",
+    "Ajout de fixations en partie basse pour consolider l’ouvrage",
+    "Décapage complet de l’ancienne finition",
+    "Remplacement des parcloses dégradées",
+    "Préparation et dépoussiérage du bois",
+    "Application d’une nouvelle lasure de protection",
+    "Contrôle des fixations et finitions"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/renovation-garde-corps-bois-01-avant.webp",
+      "alt": "Garde-corps en bois avant rénovation avec lasure très dégradée",
+      "caption": "État initial : protection écaillée et bois exposé aux intempéries."
+    },
+    {
+      "image": "/assets/photos/renovation-garde-corps-bois-03-preparation.webp",
+      "alt": "Garde-corps en bois en cours de décapage et de préparation",
+      "caption": "Décapage complet et préparation des éléments avant remise en protection."
+    },
+    {
+      "image": "/assets/photos/renovation-garde-corps-bois-05-apres-detail.webp",
+      "alt": "Garde-corps rénové avec nouvelles fixations visibles en partie basse",
+      "caption": "Vue après consolidation, remplacement des parcloses et application de la lasure."
+    },
+    {
+      "image": "/assets/photos/renovation-garde-corps-bois-06-apres-finition.webp",
+      "alt": "Détail de la finition lasurée sur le garde-corps en bois",
+      "caption": "Détail de la finition : bois protégé et veinage conservé."
+    }
+  ]
+}
