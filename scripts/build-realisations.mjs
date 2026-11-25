@@ -38,12 +38,13 @@ const serviceEvidence={
     ]
   },
   'petits-travaux':{
-    intro:'Les chantiers publiés montrent la prise en charge de dépannages variés, du remplacement d’un équipement dans un logement à la réparation de vitrages anciens.',
+    intro:'Les chantiers publiés montrent la prise en charge de dépannages variés, du remplacement d’un équipement à la réparation de vitrages anciens et à la préparation d’un sol avant revêtement.',
     points:[
       'Dépose d’un équipement hors service',
       'Démontage partiel du meuble pour accéder à l’installation',
       'Pose, ajustement et vérification de la nouvelle hotte',
-      'Remplacement de carreaux simple vitrage et finition au mastic de vitrier'
+      'Remplacement de carreaux simple vitrage et finition au mastic de vitrier',
+      'Nettoyage, primaire d’accrochage et ragréage fibré autolissant avant revêtement de sol'
     ]
   },
   'maintenance-immobiliere':{
@@ -315,7 +316,7 @@ async function updateSitemap(entries){
     '/plan-du-site':'2026-11-16',
     '/services/renovation-salle-deau':'2026-11-24',
     '/services/enduit-peinture-placo':'2026-11-24',
-    '/services/petits-travaux':'2026-11-18',
+    '/services/petits-travaux':'2026-11-25',
     '/services/exterieurs':'2026-11-25',
     '/services/maintenance-immobiliere':'2026-11-18'
   };

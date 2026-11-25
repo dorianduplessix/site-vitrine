@@ -1,0 +1,55 @@
+{
+  "title": "Préparation d’une dalle béton avant pose d’un parquet flottant",
+  "date": "2026-11-25",
+  "published": true,
+  "city": "Quimperlé",
+  "seo_title": "Ragréage fibré autolissant à Quimperlé | Duplessix",
+  "seo_description": "À Quimperlé, préparation d’une dalle béton par nettoyage, primaire d’accrochage et ragréage fibré autolissant avant parquet flottant.",
+  "services": ["petits-travaux"],
+  "summary": "À Quimperlé, préparation et remise à niveau d’une dalle béton avec un ragréage fibré autolissant, avant la pose d’un parquet flottant réalisée par le client.",
+  "cover": "/assets/photos/ragreage-sol-02-vue-ensemble.webp",
+  "cover_alt": "Vue d’ensemble du ragréage fibré autolissant réalisé à Quimperlé",
+  "sections": [
+    {
+      "title": "Préparer la dalle avant la pose du parquet",
+      "paragraphs": [
+        "La dalle béton devait être remise à niveau avant de recevoir un parquet flottant. L’objectif était d’obtenir un support suffisamment plan, régulier et propre pour permettre la pose du futur revêtement.",
+        "La pose du parquet n’était pas comprise dans la prestation : elle devait être réalisée ensuite par le client, après séchage complet du ragréage."
+      ]
+    },
+    {
+      "title": "Nettoyage et primaire d’accrochage",
+      "paragraphs": [
+        "Le support a d’abord été soigneusement nettoyé et dépoussiéré afin d’éliminer les éléments susceptibles de nuire à l’adhérence.",
+        "Un primaire d’accrochage a ensuite été appliqué sur la dalle béton pour réguler la porosité du support et favoriser l’adhérence du ragréage."
+      ]
+    },
+    {
+      "title": "Application d’un ragréage fibré autolissant",
+      "paragraphs": [
+        "Le ragréage fibré autolissant a été coulé puis réparti sur la surface. Sa formulation fibrée apporte une résistance adaptée aux supports qui présentent de légers mouvements ou des sollicitations particulières.",
+        "Le produit frais a été accompagné et lissé afin d’obtenir une surface continue et régulière avant son séchage."
+      ]
+    }
+  ],
+  "steps": [
+    "Nettoyage et dépoussiérage de la dalle béton",
+    "Contrôle du support avant application",
+    "Application du primaire d’accrochage",
+    "Préparation du ragréage fibré autolissant",
+    "Coulage, répartition et lissage du produit",
+    "Séchage avant la pose du parquet flottant par le client"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/ragreage-sol-01-vue-seuil.webp",
+      "alt": "Ragréage fibré autolissant vu depuis le seuil de la pièce à Quimperlé",
+      "caption": "Vue depuis le seuil sur le ragréage fibré fraîchement coulé et lissé."
+    },
+    {
+      "image": "/assets/photos/ragreage-sol-02-vue-ensemble.webp",
+      "alt": "Dalle béton remise à niveau par ragréage à Quimperlé",
+      "caption": "Vue d’ensemble de la dalle remise à niveau avant séchage."
+    }
+  ]
+}
