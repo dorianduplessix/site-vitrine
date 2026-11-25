@@ -1,0 +1,84 @@
+{
+  "title": "Reprise complète d’un plancher après un dégât des eaux",
+  "date": "2026-11-25",
+  "published": true,
+  "city": "Clohars-Carnoët",
+  "seo_title": "Remplacement de plancher à Clohars-Carnoët | Duplessix",
+  "seo_description": "À Clohars-Carnoët, dépose d’un plancher pourri après dégât des eaux, reprise des lambourdes, pose de dalles OSB et réemploi du parquet.",
+  "services": ["petits-travaux", "maintenance-immobiliere"],
+  "summary": "Dépose complète d’un plancher fortement dégradé par un dégât des eaux, reconstruction de la structure en lambourdes traitées, pose de dalles OSB puis repose du parquet conservé.",
+  "cover": "/assets/photos/remplacement-plancher-06-dalles-osb.webp",
+  "cover_alt": "Nouveau plancher en dalles OSB posé sur des lambourdes traitées à Clohars-Carnoët",
+  "sections": [
+    {
+      "title": "Déposer le parquet en vue de sa réutilisation",
+      "paragraphs": [
+        "Le plancher porteur avait été entièrement dégradé à la suite d’un dégât des eaux. Avant la dépose, chaque lame du parquet existant a été repérée et numérotée afin de pouvoir reconstituer ensuite le calepinage d’origine.",
+        "Les lames ont été retirées progressivement et conservées pour leur repose après la reconstruction du support."
+      ]
+    },
+    {
+      "title": "Revenir jusqu’à la dalle béton",
+      "paragraphs": [
+        "Après la dépose du parquet, l’ancien plancher et sa structure ont été entièrement démontés. Les bois détériorés présentaient une dégradation importante et ne pouvaient pas être conservés.",
+        "La dépose a été poursuivie jusqu’à la dalle béton afin de repartir sur un support sain. Les matériaux déposés ont ensuite été évacués en déchetterie."
+      ]
+    },
+    {
+      "title": "Reconstruire la structure du plancher",
+      "paragraphs": [
+        "Une nouvelle structure a été réalisée avec des lambourdes en bois traité. Leur implantation permet de recréer un support porteur régulier avant la pose des panneaux.",
+        "L’ancien plancher a été remplacé par des dalles OSB assemblées sur les lambourdes. Cette surface continue constitue le nouveau support du parquet."
+      ]
+    },
+    {
+      "title": "Reposer le parquet conservé",
+      "paragraphs": [
+        "Après la réalisation du plancher en OSB, les lames préalablement numérotées ont été remises en place dans leur ordre d’origine.",
+        "Cette dernière étape a bien été réalisée, mais elle n’est pas illustrée dans les photographies présentées sur cette page."
+      ]
+    }
+  ],
+  "steps": [
+    "Repérage et numérotation des lames de parquet",
+    "Dépose soigneuse du parquet en vue de sa réutilisation",
+    "Dépose complète de l’ancien plancher et de sa structure",
+    "Mise à nu et nettoyage de la dalle béton",
+    "Évacuation des matériaux dégradés en déchetterie",
+    "Création d’une nouvelle structure en lambourdes traitées",
+    "Pose et assemblage des dalles OSB",
+    "Repose du parquet existant selon le repérage initial"
+  ],
+  "gallery": [
+    {
+      "image": "/assets/photos/remplacement-plancher-01-reperage-parquet.webp",
+      "alt": "Lames de parquet numérotées avant leur dépose à Clohars-Carnoët",
+      "caption": "Repérage et numérotation des lames avant dépose pour permettre leur réutilisation."
+    },
+    {
+      "image": "/assets/photos/remplacement-plancher-02-depose-parquet.webp",
+      "alt": "Dépose progressive du parquet existant après un dégât des eaux",
+      "caption": "Dépose progressive du parquet et découverte du support dégradé."
+    },
+    {
+      "image": "/assets/photos/remplacement-plancher-03-plancher-degrade.webp",
+      "alt": "Ancien plancher dégradé visible après la dépose du parquet",
+      "caption": "État du plancher ancien après retrait des premières lames."
+    },
+    {
+      "image": "/assets/photos/remplacement-plancher-04-depose-plancher.webp",
+      "alt": "Dépose complète de l’ancien plancher endommagé par l’eau",
+      "caption": "Démontage de l’ancien plancher et de sa structure jusqu’à la dalle béton."
+    },
+    {
+      "image": "/assets/photos/remplacement-plancher-05-bois-pourri.webp",
+      "alt": "Bois pourri retiré de la structure du plancher",
+      "caption": "Détail des éléments en bois fortement dégradés par l’humidité."
+    },
+    {
+      "image": "/assets/photos/remplacement-plancher-06-dalles-osb.webp",
+      "alt": "Plancher reconstruit en dalles OSB avant la repose du parquet",
+      "caption": "Nouvelle structure terminée avec dalles OSB, avant la repose du parquet conservé."
+    }
+  ]
+}
